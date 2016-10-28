@@ -1,0 +1,13 @@
+{% extends 'app/base.html' %}
+{% block title %} Акции {% endblock %}
+{% block breadcrumb %}
+    <li class="active">Акции</li>
+{% endblock %}
+{% block header %}Акции{% endblock %}
+{% block content %}
+     <ul class="list-unstyled">
+        {% for comp in comp_qs %}
+            <li>{{ comp.company_code }} <a href='{% url 'app:ticker' tick=comp.company_code %}'>link</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

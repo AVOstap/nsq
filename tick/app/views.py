@@ -7,7 +7,7 @@ from django.db.models import Min, Max
 from django.http import JsonResponse, Http404
 from django.template.response import TemplateResponse
 
-from app.utils import pairwise
+from app.utils import pairwise, parse_date
 from app.models import Company, InsTrade, Trade
 
 
@@ -90,8 +90,6 @@ def insider_trade(request, tick, name, is_json_response):
 
 
 def analytics(request, tick, is_json_response):
-    from scripts.init_base import parse_date
-
     try:
         date_from = parse_date(request.GET['date_from'])
         date_to = parse_date(request.GET['date_to'])

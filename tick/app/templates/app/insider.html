@@ -9,6 +9,16 @@
 {% block content %}
 
 <table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Relation</th>
+        <th>Date</th>
+        <th>Transaction type</th>
+        <th>Owner type</th>
+        <th>Shares traded</th>
+        <th>Last price</th>
+        <th>Shares head</th>
+    </tr>
     {% for instrade in instrade_qs %}
     <tr>
         <td>

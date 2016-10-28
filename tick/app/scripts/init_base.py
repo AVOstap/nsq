@@ -1,34 +1,29 @@
-import downlader
-import read_file
-import html_parser
-from datetime import datetime, date
+# coding: utf-8
+
 import locale
+
+import downlader, read_file, html_parser
 
 import load_project
 
 from app.models import Company, Insider, InsTrade, Trade
+from app.utils import parse_date
 
 locale.setlocale(locale.LC_ALL, 'english_USA')
-
-
-def test_iter():
-    tick_list = ['goog', 'stt', ]
-    for tick in tick_list:
-        yield tick
 
 
 def main():
     tick_iter = read_file.tick_iter()
     d_type = downlader.H_TYPE
 
-    dwl_iter = downlader.downloader(test_iter(), d_type=d_type)
+    dwl_iter = downlader.downloader(tick_iter, d_type=d_type)
     for tick, text in dwl_iter:
         for r in html_parser.parse(text):
             if d_type == downlader.I_TYPE:
-                print tick, prepare_date_i(r)
+                prepare_date_i(r)
                 save_data_i(r, tick)
             elif d_type == downlader.H_TYPE:
-                print tick, prepare_data_h(r)
+                prepare_data_h(r)
                 save_data_h(r, tick)
             else:
                 raise Exception
@@ -71,26 +66,16 @@ def prepare_data_h(array):
     array[4] = locale.atof(array[4])
     array[5] = locale.atoi(array[5])
 
-    return array
-
-
-
-def parse_date(date_in_text):
-    try:
-        return datetime.strptime(date_in_text, '%m/%d/%Y').date()
-    except ValueError:
-        return date.today()
 # delete fallback
+
 
 def prepare_date_i(array):
     if len(array) != 8:
         raise AttributeError
-    array[2] = datetime.strptime(array[2], '%m/%d/%Y').date()
+    array[2] = parse_date(array[2])
     array[-3] = locale.atoi(array[-3])
     array[-2] = locale.atof(array[-2])
     array[-1] = locale.atoi(array[-1])
-
-    return array
 
 
 if __name__ == '__main__':

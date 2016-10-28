@@ -25,4 +25,4 @@ def downloader(tick_iter, d_type=I_TYPE):
                 continue
             with open(tick + '.txt', 'w') as f:
                 f.write(request.text)
-            yield request.text
+            yield tick, request.text

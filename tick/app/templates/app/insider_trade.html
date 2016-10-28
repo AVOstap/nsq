@@ -1,0 +1,24 @@
+{% extends 'app/base.html' %}
+{% block title %} insider trade {% endblock %}
+{% block breadcrumb %}
+        <li> <a href="{% url 'app:index' %}">Акции</a> <span class="divider">/</span></li>
+        <li ><a href="{% url 'app:ticker' tick=tick %}">{{ tick }}</a><span class="divider">/</span></li>
+        <li ><a href="{% url 'app:insider' tick=tick %}">insider</a><span class="divider">/</span></li>
+        <li class="active">{{ name }}</li>
+{% endblock %}
+{% block header %}{{ name }}{% endblock %}
+{% block content %}
+    <table class="table">
+        {% for instrade in instrade_qs %}
+           <tr>
+               <td>{{ instrade.relation }}</td>
+               <td>{{ instrade.date }}</td>
+               <td>{{ instrade.transaction_type }}</td>
+               <td>{{ instrade.owner_type }}</td>
+               <td>{{ instrade.shares_traded }}</td>
+               <td>{{ instrade.last_price }}</td>
+               <td>{{ instrade.shares_head }}</td>
+           </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

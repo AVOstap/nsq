@@ -1,0 +1,71 @@
+{% extends 'app/base.html' %}
+{% block title %} analytics {% endblock %}
+{% block breadcrumb %}
+<li><a href="{% url 'app:index' %}">Акции</a> <span class="divider">/</span></li>
+<li><a href="{% url 'app:ticker' tick=tick %}">{{ tick }}</a><span class="divider">/</span></li>
+<li class="active">analytics</li>
+{% endblock %}
+{% block header %}{{tick}} {{date_from}} - {{date_to}}{% endblock %}
+{% block content %}
+<div id="price-chart"></div>
+<table class="table">
+    <tr>
+        <th>Date</th>
+        <th>Open</th>
+        <th>High</th>
+        <th>Low</th>
+        <th>Close</th>
+    </tr>
+    {% for trade in new_data %}
+    <tr>
+        <td>{{ trade.0 }}</td>
+        <td>{{ trade.1 }}</td>
+        <td>{{ trade.2 }}</td>
+        <td>{{ trade.3 }}</td>
+        <td>{{ trade.4 }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
+{% block script %}
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static "app/c3.min.css" %}">
+<script type="text/javascript" src="{% static "app/d3.v3.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "app/c3.min.js" %}"></script>
+<script>
+        c3.generate({
+            bindto: '#price-chart',
+            data: {
+                x: 'x',
+                columns: [
+                    ['x'].concat({{date_list |safe}}),
+                    ['open'].concat({{ open_price_list }}),
+                    ['high'].concat({{ high_price_list }}),
+                    ['low'].concat({{ low_price_list }}),
+                    ['close'].concat({{ close_price_list }}),
+                  ],
+                types: {
+                    open: 'area-spline',
+                    high: 'area-spline',
+                    low: 'area-spline',
+                    close: 'area-spline'
+                }
+            },
+            axis: {
+             x : {
+                type : 'timeseries',
+                tick: {
+                    fit: true,
+                    format: "%e %b %y"
+                        }
+                    },
+                y: {
+                    max: {{range.high_price__max}},
+                    min: {{range.low_price__min}},
+                }
+             }
+        });
+
+
+</script>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'app/base.html' %}
+{% block title %} {{tick}} {% endblock %}
+{% block breadcrumb %}
+<li><a href="{% url 'app:index' %}">Акции</a> <span class="divider">/</span></li>
+<li class="active">{{tick}}</li>
+{% endblock %}
+{% block header %}{{tick}}{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-xs-10">
+        <table class="table">
+            {% for trade in trade_qs %}
+            <tr>
+                <td>{{ trade.date }}</td>
+                <td>{{ trade.open_price }}</td>
+                <td>{{ trade.high_price }}</td>
+                <td>{{ trade.low_price }}</td>
+                <td>{{ trade.close_price }}</td>
+                <td>{{ trade.volume }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div class="col-xs-2">
+        <p class="muted">insider <a href="{% url 'app:insider' tick=tick %}">link</a>  </p>
+        <hr>
+        <p class="muted">analytics <a href="{% url 'app:analytics' tick=tick %}?date_from=10/1/2016&date_to=10/27/2016">link</a>  </p>
+        <p class="muted">delta <a href="{% url 'app:delta' tick=tick %}?value=50&type=open">link</a>  </p>
+    </div>
+{% endblock %}
+

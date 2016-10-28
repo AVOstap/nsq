@@ -1,0 +1,19 @@
+{% extends 'app/base.html' %}
+{% block title %} delta {% endblock %}
+{% block breadcrumb %}
+<li><a href="{% url 'app:index' %}">Акции</a> <span class="divider">/</span></li>
+<li><a href="{% url 'app:ticker' tick=tick %}">{{ tick }}</a><span class="divider">/</span></li>
+<li class="active">delta</li>
+{% endblock %}
+{% block header %}{{ tick }}{% endblock %}
+{% block content %}
+<table class="table">
+    {% for start_date, end_date, delta in result %}
+    <tr>
+        <td>{{start_date}}</td>
+        <td>{{end_date}}</td>
+        <td>{{delta}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

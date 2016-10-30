@@ -1,7 +1,9 @@
 # coding: utf-8
 
-import datetime
 import json
+from datetime import date
+
+from dateutil.relativedelta import relativedelta
 
 from django.db.models import Min, Max
 from django.http import JsonResponse, Http404
@@ -25,7 +27,7 @@ def index(request, is_json_response):
 
 
 def ticker(request, tick, is_json_response):
-    three_month_ago = (datetime.datetime.now() - datetime.timedelta(days=90)).date()
+    three_month_ago = date.today() - relativedelta(months=3)
     trade_qs = Trade.objects.filter(company__code=tick, date__gte=three_month_ago)
 
     if is_json_response:

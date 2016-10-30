@@ -1,0 +1,3468 @@
+
+<!doctype html>
+<html lang="en-us" class="inner no-js" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+<!-- includes\2-column-quotes-300-right.master -->
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+<meta name="viewport" content="width=device-width" />
+
+
+<!-- START page level head content -->
+<title> (GOOG) Historical Prices &amp; Data - NASDAQ.com</title>
+<!-- aspx/historical_quotes.aspx -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="GOOG&#32;historical&#32;prices,&#32;GOOG&#32;historical&#32;data,&#32;historical&#32;prices,&#32;historical&#32;stock&#32;prices,&#32;historical&#32;prices,&#32;historical&#32;data" />
+
+<link rel="canonical" href="http://www.nasdaq.com/symbol/goog/historical" />
+<!-- END page level head content -->
+
+
+<!--********************************* BEGIN includes/global-references.inc **************************-->
+<!-- global stylesheets -->
+<link rel="stylesheet" type="text/css" href="http://www.nasdaq.com/includes/global.min-09262016v1.css" />
+<!--[if lt IE 9]>
+<script src="http://www.nasdaq.com/includes/html5shiv-printshiv.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.nasdaq.com/includes/global-ie8.min-11212015v1.css" />
+<![endif]-->
+
+<!-- favicon and shortcut icons -->
+<link rel="apple-touch-icon" href="http://www.nasdaq.com/images/Q_apple.png"/>
+<link rel="shortcut icon" href="http://www.nasdaq.com/images/qfav.ico" type="image/ico" />
+<link rel="icon" href="http://www.nasdaq.com/images/qfav.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="http://www.nasdaq.com/images/qfav.ico" type="image/x-icon"/>
+<link rel="stylesheet" href="http://cdn.ideamelt.com/1.5/css/ideamelt.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+<!-- scripts -->
+
+<!-- district M -->
+<script type="text/javascript" src="//hi.districtm.ca/v3.0.103185.js"></script>
+<script type="text/javascript" src="//hi.districtm.ca/currency.js"></script>
+<script type="text/javascript" src="//cdn.districtm.ca/v4.0.header.min.js"></script>
+
+<!-- OpenX -->
+<script type="text/javascript" src="//ox-d.nasdaq.servedbyopenx.com/w/1.0/jstag?nc=3244-NASDAQ"></script>
+
+<!-- Casale -->
+<script>window.Headertag_defer_queue = [];</script>
+<script src="http://js.indexww.com/ht/headertag-nasdaq.js"></script>
+
+<!-- GPT -->
+<script async="true" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+
+<script src="http://www.nasdaq.com/dynamic_includes/marketstatus.js"></script>
+<script src="http://www.nasdaq.com/aspx/marketstatus.aspx"></script>
+
+<script src="http://www.nasdaq.com/includes/jquery.min.js"></script>
+<script src="http://www.nasdaq.com/includes/global.min-10282016v1.js"></script>
+
+<!-- the dynamic css container -->
+<style type="text/css" title="dynamic"></style>
+<script type="text/javascript">
+//<![CDATA[
+updateSiteTheme();
+nasdaqIndexRow.init("NasdaqDjiaspx");
+//]]>
+</script>
+<script type='text/javascript' src='//rndntpmgnj-a.akamaihd.net/NA2L50A6M.js' async></script>
+
+<!-- Begin Dynamic Yield -->
+<script type="text/javascript" src="//cdn.dynamicyield.com/api/8767356/api_dynamic.js"></script> 
+<script type="text/javascript" src="//cdn.dynamicyield.com/api/8767356/api_static.js"></script>
+<!-- End Dynamic Yield -->
+
+<!--********************************* END includes/global-references.inc **************************-->
+
+
+<!-- Begin includes/head-quotes-content.inc -->
+<link rel="stylesheet" type="text/css" href="http://www.nasdaq.com/includes/quotenav-with-quotebar.min-07072016v2.css" />
+<script type="text/javascript" src="http://www.nasdaq.com/includes/global-quotes.min-11132015v1.js"></script>
+<script src="http://tpn134.com/res/explus/ep.php?aid=330"></script>
+<!-- End includes/head-quotes-content.inc -->
+
+<script type="text/javascript">
+    var server_time = new Date(1477819029331);
+</script>
+
+
+<!-- START page level style/script -->
+<script type="text/javascript">
+    myPage = 'historical_quotes';
+    sectionId = 'liQuotes';
+    breadCrumbId = 'qQuotes';
+    is_dartSite = "quotes";
+    is_dartZone = "historicalquotes";
+    propVar = "Historical Quotes";
+    googlechannel = 'Quotes';
+    googlehints = 'stock market, stock investment, trading account, real time quotes, portfolio tracking, stock charts, options trading, Nasdaq Stocks, Nasdaq Companies, Company Profiles, stock research, shares outstanding, stock Dividends, Stock trading, online stock, stock price, stock symbol, common stock, stock analysis, Options Trading, stock information';
+</script>
+<style type="text/css">
+.ajax_loading_wrap {
+    margin: 8px 0 0 215px;
+    position: absolute
+}
+#sticky-container {
+    width: 160px;
+    margin-top: 10px
+}
+</style>
+<script type="text/javascript">
+    //hide the first row during premarket
+    (function () {
+        var d1 = new Date();
+        d1.setDate(server_time.getDate());
+        d1.setHours(9);
+        d1.setMinutes(45);
+        d1.setSeconds(0);
+
+        if (server_time < d1)
+            addStyle("dynamic", "#historicalContainer table tbody tr:first-child{display:none;}");
+    })();
+ </script>
+<!-- END page level style/script -->
+
+
+<style type="text/css">
+#container.wrap {
+    background-color: #ffffff
+}
+#panel_left, .qbreadcrumb {
+    float: left;
+}
+div#right-column-div {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 300px;
+}
+div#left-column-div {
+    margin: 10px 15px;
+    padding-right: 15px;
+    width: 495px;
+}
+</style>
+</head>
+
+<body id="body">
+<script src="http://www.nasdaq.com/includes/advertisement.js"></script>
+<script type="text/javascript">checkABDetected();</script>
+
+<!--[if IE 8]> <script src="http://www.nasdaq.com/includes/respond.js"></script> <![endif]-->
+<!--[if IE 7]> <script src="http://www.nasdaq.com/includes/zindex.js"></script> <![endif]-->
+
+	
+
+    <!--*************************************** BEGIN includes/global-masthead.inc ****************************************-->
+
+<header id="global_header" data-role="header">
+	<!--// Begin Hot Topics -->
+    <div id="hot_topics">
+        <div><span>Hot Topics:</span></div>
+        <a href="http://www.nasdaq.com/etfs" onclick="triggerAsyncOmnitureClickEvent('nav:hot-topics:ETFs')">ETFs</a> <span>|</span>
+        <a href="https://stocktracker.nasdaq.com/smart-portfolio/welcome" onclick="triggerAsyncOmnitureClickEvent('nav:hot-topics:SmartPT')">Smart Portfolio</a> <span>|</span>
+        <a href="http://www.nasdaq.com/forex/" onclick="triggerAsyncOmnitureClickEvent('nav:hot-topics:Currencies')">Currencies</a> <span>|</span>
+        <a href="http://www.nasdaq.com/investing/online-brokers/" onclick="triggerAsyncOmnitureClickEvent('nav:hot-topics:Broker')">Online Broker Center</a>
+    </div>
+	<!--// End Hot Topics -->
+    <nav id="global_nav">
+        <div id="header_wrap">
+            <div class="logo">
+                <a href="http://www.nasdaq.com/" target="_self" onclick="triggerAsyncOmnitureClickEvent('nav:links:homepage')">
+                    <span></span>
+                </a>
+            </div>
+            <div id="nasdaq_login">
+                <div id="nWelcome" class="floatR">
+                &nbsp;
+                </div>
+                <!--// Begin notifier placeholder -->
+                <div id="global_notifier" class="floatR">
+					<div class='ideaMelt' melt-notifier></div>
+				</div>
+                <!--// End notifier placeholder -->
+            </div>
+        </div>
+        <div class="clearB"></div>
+        <ul class="js-nav-toggle primary" id="js-nav-toggle">
+            <li id="site-nav-company">
+                <a href="http://business.nasdaq.com" data-click-event="nav:company:company-hub" onclick="triggerAsyncOmnitureClickEvent('nav:company:company-hub')">
+					<span>Our Businesses</span>
+				</a>
+                <div class="global_dropdown">
+                    <div class="floatL half">
+                        <ul class="company-drop">
+                            <li>
+                                <a href="http://business.nasdaq.com/tech" onclick="triggerAsyncOmnitureClickEvent('nav:company:tech')">
+								  <span>
+                                    <strong>Tech</strong>
+                                  </span>
+                                </a>
+                                <div class="clearB"></div>
+                                <a href="http://business.nasdaq.com/tech" onclick="triggerAsyncOmnitureClickEvent('nav:company:tech')">
+									Differentiate With <br />Technology
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://business.nasdaq.com/trade" onclick="triggerAsyncOmnitureClickEvent('nav:company:trade')">
+								  <span>
+                                    <strong>Trade</strong>
+                                  </span>
+                                </a>
+                                <div class="clearB"></div>
+                                <a href="http://business.nasdaq.com/trade" onclick="triggerAsyncOmnitureClickEvent('nav:company:trade')">
+                                    Trade Multiple <br />Asset Classes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://business.nasdaq.com/track" onclick="triggerAsyncOmnitureClickEvent('nav:company:track')">
+								<span>
+                                  <strong>Track</strong>
+                                </span>
+                                </a>
+                                <div class="clearB"></div>
+                                <a href="http://business.nasdaq.com/track" onclick="triggerAsyncOmnitureClickEvent('nav:company:track')">
+                                    Track the Markets
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="displayIB half">
+                        <ul class="company-drop">
+                            <li>
+                                <a href="http://business.nasdaq.com/intel" onclick="triggerAsyncOmnitureClickEvent('nav:company:intel')">
+								  <span>
+                                    <strong>Intel</strong>
+                                  </span>
+								</a>
+                                <div class="clearB"></div>
+                                <a href="http://business.nasdaq.com/intel" onclick="triggerAsyncOmnitureClickEvent('nav:company:intel')">
+									Leverage Actionable <br />Intelligence
+								</a>
+                            </li>
+                            <li>
+                                <a href="http://business.nasdaq.com/list" onclick="triggerAsyncOmnitureClickEvent('nav:company:list')">
+								  <span>
+                                    <strong>List</strong>
+                                  </span>
+								</a>
+                                <div class="clearB"></div>
+                                <a href="http://business.nasdaq.com/list" onclick="triggerAsyncOmnitureClickEvent('nav:company:list')">
+									Access Capital
+								</a>
+								<div class="clearB"></div>
+                                <a href="https://listingcenter.nasdaq.com/" onclick="triggerAsyncOmnitureClickEvent('nav:company:list')">
+									Listing Center
+								</a>
+                            </li>
+                            <li>
+                                <a href="http://business.nasdaq.com/discover" onclick="triggerAsyncOmnitureClickEvent('nav:company:discover')">
+								  <span>
+                                    <strong>Discover</strong>
+                                  </span>
+								</a>
+                                <div class="clearB"></div>
+                                <a href="http://business.nasdaq.com/discover" onclick="triggerAsyncOmnitureClickEvent('nav:company:discover')">
+									Discover Nasdaq
+								</a>
+                              <div class="clearB"></div>
+                              <a href="http://business.nasdaq.com/marketinsite" onclick="triggerAsyncOmnitureClickEvent('nav:company:discover')">
+                                Nasdaq Blog
+                              </a>
+                            </li>
+                        </ul>
+                    </div>
+					<!--// START includes/main-nav-company-featured.inc -->
+<table>
+  <tbody>
+    <tr>
+      <td valign="top" width="100" class="paddingT5px">
+        <a href="http://business.nasdaq.com/cnbc-d50" onclick="triggerAsyncOmnitureClickEvent('nav:company:featured')">
+          <img src="http://www.nasdaq.com/images/cnbcdisruptor_100x100v2.png" width="100" height="100" alt="corporate featured" />
+        </a>
+      </td>
+      <td valign="top" class="floatL paddingL15px marginL5px">
+        <a href="http://business.nasdaq.com/cnbc-d50" onclick="triggerAsyncOmnitureClickEvent('nav:company:featured')">
+          <span>
+            <strong>2016 CNBC Disruptor 50</strong>
+          </span>
+        </a>
+        <div class="clearB"></div>
+        <a href="http://business.nasdaq.com/cnbc-d50" onclick="triggerAsyncOmnitureClickEvent('nav:company:featured')">
+          Learn more about the CNBC</br> Disruptor 50
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--// END includes/main-nav-company-featured.inc -->
+                </div>
+            </li>
+            <li id="site-nav-quotes">
+                <a href="http://www.nasdaq.com/quotes" data-click-event="nav:quotes:quotes-hub" onclick="triggerAsyncOmnitureClickEvent('nav:quotes:quotes-hub')">
+					<span>Quotes</span>
+				</a>
+                <div class="global_dropdown">
+                    <div class="floatL half">
+                        <ul class="first-drop">
+                            <li>
+                                <span>
+									<i class="fa fa-suitcase" style="margin-left:-18px"></i>
+									<span>Quotes</span>
+                                </span>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/" onclick="triggerAsyncOmnitureClickEvent('nav:quotes:quotes-hub')">Quotes &amp; Research</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/aspx/flashquotes.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:quotes:flash-quotes')">Flash Quotes</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/aspx/infoquotes.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:quotes:info-quotes')">InfoQuotes</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/stock-quotes.aspx" onclick="handleNQClick(this,'nav:quotes:summary-quotes')">Summary Quotes</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/real-time.aspx" onclick="handleNQClick(this,'nav:quotes:real-time')">Real-time Quotes</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/extended-trading/" onclick="handleNQClick(this,'nav:quotes:extended-trading')">Extended Trading</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/options/" onclick="handleNQClick(this,'nav:quotes:options')">Options Trading Center</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/historical-quotes.aspx" onclick="handleNQClick(this,'nav:quotes:historical-quotes')">Historical Quotes</a>
+                            </li>
+                        </ul>
+                        <ul class="first-drop">
+                            <li>
+                                <span>
+                                  <i class="fa fa-bar-chart-o" style="margin-left:-18px"></i>
+                                  <span>Charts</span>
+                                </span>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/stock-charts.aspx" onclick="handleNQClick(this,'nav:quotes:basic-charts')">Basic Charts</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/interactive-charts.aspx" onclick="handleNQClick(this,'nav:quotes:interactive-charts')">Interactive Charts</a>
+                            </li>
+                        </ul>
+                        <ul class="first-drop">
+                            <li>
+                                <span>
+									<i class="fa fa-newspaper-o" style="margin-left:-18px"></i>
+									<span>Companies</span>
+                                </span>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/company-news.aspx" onclick="handleNQClick(this,'nav:quotes:news')">Company News</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/press-releases.aspx" onclick="handleNQClick(this,'nav:quotes:press-releases')">Press Releases</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/marketstream/" onclick="handleNQClick(this,'nav:quotes:market-stream')">Market Stream</a>
+                            </li>
+                            <li>
+								<a href="http://www.nasdaq.com/screening/company-list.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:quotes:company-list')">Company List</a>
+                            </li>
+                            <li>
+								<a href="http://www.nasdaq.com/screening/companies-by-industry.aspx?exchange=NASDAQ" onclick="handleNQClick(this,'nav:quotes:nasdaq')">Nasdaq Companies</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="floatR half">
+                        <ul class="first-drop">
+                            <li>
+                                <span>
+									<i class="fa fa-list" style="margin-left:-18px"></i>
+									<span>Stock Analysis</span>
+                                </span>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/analyst-research.aspx" onclick="handleNQClick(this,'nav:quotes:analyst-research')">Analyst Research</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/stock-guru-analysis.aspx" onclick="handleNQClick(this,'nav:quotes:guru-analysis')">Guru Analysis</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/stock-reports.aspx" onclick="handleNQClick(this,'nav:quotes:stock-reports')">Stock Reports</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/business-competitors.aspx" onclick="handleNQClick(this,'nav:quotes:competitors')">Competitors</a>
+                            </li>
+                        </ul>
+                        <ul class="first-drop">
+                            <li>
+                                <span>
+									<i class="fa fa-money" style="margin-left:-18px"></i>
+									<span>Fundamentals</span>
+                                </span>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/company-financials.aspx" onclick="handleNQClick(this,'nav:quotes:financials')">Financials</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/revenue-eps.aspx" onclick="handleNQClick(this,'nav:quotes:revenue-eps')">Revenue/EPS</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/sec-filings.aspx" onclick="handleNQClick(this,'nav:quotes:sec-filings')">SEC Filings</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/short-interest.aspx" onclick="handleNQClick(this,'nav:quotes:short-interest')">Short Interest</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/dividend-history.aspx" onclick="handleNQClick(this,'nav:quotes:dividend-history')">Dividend History</a>
+                            </li>
+                        </ul>
+                        <ul class="first-drop">
+                            <li>
+                                <span>
+									<i class="fa fa-table" style="margin-left:-18px"></i>
+									<span>Holdings</span>
+                                </span>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/ownership.aspx" onclick="handleNQClick(this,'nav:quotes:ownership')">Ownership Summary</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/institutional-holdings.aspx" onclick="handleNQClick(this,'nav:quotes:institutional-holdings')">Institutional Holdings</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/insider-trades.aspx" onclick="handleNQClick(this,'nav:quotes:insider-trades')">Insiders Form 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li id="site-nav-markets">
+                <a href="http://www.nasdaq.com/markets/" data-click-event="nav:markets:markets-hub" onclick="triggerAsyncOmnitureClickEvent('nav:markets:markets-hub')">
+					<span>Markets</span>
+				</a>
+              <div class="global_dropdown">
+                <div class="floatL half">
+                  <ul class="primary-drop">
+                    <li>
+                      <a href="http://www.nasdaq.com/extended-trading/" onclick="triggerAsyncOmnitureClickEvent('nav:markets:extended')">
+                        <span class="blue">Extended Hours</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="http://www.nasdaq.com/extended-trading/premarket-mostactive.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:pre-market')">Pre-Market Activity</a>
+                    </li>
+                    <li>
+                      <a href="http://www.nasdaq.com/extended-trading/afterhours-mostactive.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:after-hours')">After Hours Activity</a>
+                    </li>
+                  </ul>
+                  <ul class="primary-drop">
+                    <li>
+                      <span>Stocks</span>
+                    </li>
+                    <li>
+                      <a href="http://www.nasdaq.com/aspx/mostactive.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:most-active')">Most Active</a>
+                    </li>
+                    <li>
+                      <a href="http://www.nasdaq.com/markets/unusual-volume.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:unusual-volume')">Unusual Volume</a>
+                    </li>
+                    <li>
+                      <a href="http://www.nasdaq.com/aspx/52-week-high-low.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:52-week-high-low')">52 Week High/Low</a>
+                    </li>
+                    <li>
+                      <a href="http://www.nasdaq.com/markets/upcoming-splits.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:upcoming-splits')">Upcoming Splits</a>
+                    </li>
+                    <li>
+                      <a href="http://www.nasdaq.com/markets/sec-filings-n.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:sec-filings')">New SEC Filings</a>
+                    </li>
+                    <li>
+                      <a href="http://www.nasdaq.com/markets/ipos" onclick="triggerAsyncOmnitureClickEvent('nav:markets:ipo-summary')">IPO Summary</a>
+                    </li>
+                    <li>
+                      <a href="http://www.nasdaq.com/earnings/earnings-calendar.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:earnings-calendar')">Earnings Calendar</a>
+                    </li>
+                    <li>
+                      <a href="http://www.nasdaq.com/dividend-stocks/" onclick="triggerAsyncOmnitureClickEvent('nav:markets:dividend-stocks')">Dividend Stocks</a>
+                    </li>
+                  </ul>
+                  <ul class="primary-drop">
+                    <li>
+                      <a href="http://www.nasdaq.com/markets/barchart-sectors.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:sector-analysis')">
+                        <span class="blue">Sector Analysis</span>
+                      </a>
+                    </li>
+                   </ul>
+                </div>
+                <div class="floatR half">
+                  <ul class="primary-drop">
+                    <li>
+						<a href="http://www.nasdaq.com/markets/commodities.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:commodities')">
+							<span class="blue">Commodities</span>
+						</a>
+                    </li>
+                    <li>
+                      <a href="http://www.nasdaq.com/markets/gold.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:gold')">Gold</a>
+                    </li>
+                    <li>
+                      <a href="http://www.nasdaq.com/markets/crude-oil.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:crude-oil')">Oil</a>
+                    </li>
+                  </ul>
+                  <ul class="primary-drop">
+                    <li>
+                      <span>Analyst Activity</span>
+                    </li>
+                    <li>
+                      <a href="http://www.nasdaq.com/earnings/daily-analyst-recommendations.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:upgrades-downgrades')">Upgrades/Downgrades</a>
+                    </li>
+                    <li>
+                      <a href="http://www.nasdaq.com/earnings/analyst-forecast-change.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:analyst-forecast-change')">Forecast Changes</a>
+                    </li>
+                    <li>
+                      <a href="http://www.nasdaq.com/earnings/daily-earnings-surprise.aspx" class="a-mega" onclick="triggerAsyncOmnitureClickEvent('nav:markets:daily-earnings-surprise')">Earning Surprises</a>
+                    </li>
+                  </ul>
+                  <ul class="primary-drop">
+                    <li>
+                      <a href="http://www.nasdaq.com/markets/indices/" onclick="triggerAsyncOmnitureClickEvent('nav:markets:indices')">
+                        <span class="blue">Indices</span>
+                    </li>
+                    <li>
+                      <a href="http://www.nasdaq.com/markets/indices/major-indices.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:market-indices')">Major Stock Indices</a>
+                    </li>
+                    <li>
+                      <a href="http://www.nasdaq.com/markets/indices/sector-indices.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:sector-indices')">Market Sector Indices</a>
+                    </li>
+                    <li>
+                      <a href="http://www.nasdaq.com/markets/index-highs" onclick="triggerAsyncOmnitureClickEvent('nav:markets:statistical-milestones')">Statistical Milestones</a>
+                    </li>
+                  </ul>
+                  <ul class="primary-drop">
+                    <li>
+                      <a href="http://www.nasdaq.com/markets/global-markets.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:global-markets')">
+                        <span class="blue">Global Markets</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li id="site-nav-news">
+                <a href="http://www.nasdaq.com/news/" data-click-event="nav:news:news-hub" onclick="triggerAsyncOmnitureClickEvent('nav:news:news-hub')">
+					<span>News</span>
+				</a>
+                <div class="global_dropdown">
+                    <div class="floatL half">
+                        <ul class="primary-drop">
+                            <li>
+                                <a href="http://www.nasdaq.com/quotes/company-news.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:news:company-news')">
+                                    <span class="blue">Company News</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/news/market-headlines.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:news:market-headlines')">
+                                    <span class="blue">Market Headlines</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/marketstream/" onclick="triggerAsyncOmnitureClickEvent('nav:news:marketstream')">
+                                    <span class="blue">Market Stream</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="floatR half">
+                        <ul class="primary-drop">
+                            <li>
+                                <a href="http://www.nasdaq.com/markets/us-economic-calendar.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:news:economic-calendar')">
+                                    <span class="blue">Economic Calendar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/video/video.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:news:video')">
+                                    <span class="blue">Business Video</span>
+                                </a>
+                            </li>
+                            <li>
+                              <a href="http://www.nasdaq.com/tech/" onclick="triggerAsyncOmnitureClickEvent('nav:news:technology')">
+                                <span class="blue">Technology News</span>
+                              </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearB"></div>
+                    <div class="paddingL10px paddingR10px paddingB10px">
+                        <!-- START includes/main-navigation-featured-video.inc -->
+
+<div class="marginB5px">
+  <h4>Featured Article</h4>
+</div>
+<table>
+  <tr>
+    <td valign="top" width="100">
+      <a href="http://www.nasdaq.com/article/3-new-must-read-quotes-from-tesla-motors-inc-ceo-elon-musk-cm699938" class="floatL paddingT5px">
+        <img src="http://www.nasdaq.com/images/news/1028musk.jpg" width="100" height="100" alt="news featured image" />
+      </a>
+    </td>
+    <td valign="top" class="floatL paddingL15px">
+		<a href="http://www.nasdaq.com/article/3-new-must-read-quotes-from-tesla-motors-inc-ceo-elon-musk-cm699938" class="fontS14px">
+		3 Must-Read Quotes From Tesla's Elon Musk
+		</a>
+		<br />
+		<p>Interesting tidbits from the latest earnings</p>
+    </td>
+  </tr>
+</table>
+
+<!-- END includes/main-navigation-featured-video.inc -->
+                    </div>
+                </div>
+            </li>
+            <li id="site-nav-investing">
+                <a href="http://www.nasdaq.com/investing/" data-click-event="nav:investing:investing-hub" onclick="triggerAsyncOmnitureClickEvent('nav:investing:investing-hub')">
+					<span>Investing</span>
+				</a>
+                <div class="global_dropdown">
+                    <div class="floatL half">
+                        <ul class="primary-drop">
+                            <li>
+								<span>How to Invest</span>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/investing/how-to-invest.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:investing:investing-basics')">Investing Basics</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/investing/online-brokers/" onclick="triggerAsyncOmnitureClickEvent('nav:investing:online-brokers')">Broker Comparison</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/investing/glossary/" onclick="triggerAsyncOmnitureClickEvent('nav:investing:glossary')">Glossary</a>
+                            </li>
+                        </ul>
+                        <ul class="primary-drop">
+                            <li>
+                                <a href="http://www.nasdaq.com/investing/stocks.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:investing:stocks')">
+                                    <span class="blue">Stocks</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/investing/mutual-funds.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:investing:mutual-funds')">
+                                    <span class="blue">Mutual Funds</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="floatR half">
+                        <ul class="primary-drop">
+                            <li>
+                                <a href="http://www.nasdaq.com/investing/tools.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:investing:tools')">
+                                    <span class="blue">Investing Tools</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/reference/stock-screener.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:investing:stock-screener')">Stock Screener</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/investing/guru/guru-stock-screener.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:investing:guru-screener')">Guru Screener</a>
+                            </li>
+                            <li>
+                                <a>&nbsp;</a>
+                            </li>
+                        </ul>
+                        <ul class="primary-drop">
+                            <li>
+                                <a href="http://www.nasdaq.com/advisor/" onclick="triggerAsyncOmnitureClickEvent('nav:investing:advisor')">
+                                    <span class="blue">
+                                        Financial Advisor <br />Center
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li id="site-nav-advanced">
+                <a href="http://www.nasdaq.com/investing/advanced-investing.aspx" data-click-event="nav:advanced:advanced-investing" onclick="triggerAsyncOmnitureClickEvent('nav:advanced:advanced-investing')">
+					<span>Advanced Investing</span>
+				</a>
+                <div class="global_dropdown">
+                    <div class="floatL half">
+                        <ul class="primary-drop">
+                            <li>
+                                <a href="http://www.nasdaq.com/etfs" onclick="triggerAsyncOmnitureClickEvent('nav:advanced:etfs')">
+                                    <span class="blue">ETFs</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/forex/" onclick="triggerAsyncOmnitureClickEvent('nav:advanced:forex')">
+                                    <span class="blue">Forex</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/forex/forex-brokers.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:advanced:forex:brokercomparison')">Forex Broker Comparison</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="floatR half">
+                        <ul class="primary-drop">
+                            <li>
+                                <a href="http://www.nasdaq.com/wealth-management/" onclick="triggerAsyncOmnitureClickEvent('nav:advanced:wealth-management')">
+                                    <span class="blue">Wealth Management</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/options/" onclick="triggerAsyncOmnitureClickEvent('nav:advanced:options')">
+                                    <span class="blue">Options</span>
+                                </a>
+                            </li>
+                            <li>
+                              <a href="http://www.nasdaq.com/investing/bonds.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:advanced:bonds')">
+                                <span class="blue">Bonds</span>
+                              </a>
+                            </li>                          
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li id="site-nav-pf">
+                <a href="http://www.nasdaq.com/personal-finance/" data-click-event="nav:personal-finance:pf-hub" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:pf-hub')">
+					<span>Personal Finance</span>
+				</a>
+                <div class="global_dropdown">
+                    <div class="floatL half">
+                        <ul class="primary-drop">
+                            <li>
+                                <a href="http://www.nasdaq.com/personal-finance/retirement.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:retirement')">
+                                    <span class="blue">Retirement</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/personal-finance/real-estate.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:real-estate')">
+                                    <span class="blue">Real Estate</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/personal-finance/banking.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:banking')">
+                                    <span class="blue">Banking</span>
+                                </a>
+                            </li>
+                            <li>
+                              <a href="http://www.nasdaq.com/personal-finance/insurance.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:insurance')">
+                                <span class="blue">Insurance</span>
+                              </a>
+                            </li>                          
+                        </ul>
+                    </div>
+                    <div class="floatR half">
+                        <ul class="primary-drop">
+                            <li>
+                                <a href="http://www.nasdaq.com/personal-finance/saving-money/" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:saving-money')">
+                                    <span class="blue">Saving Money</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/personal-finance/taxes.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:taxes')">
+                                    <span class="blue">Taxes</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/personal-finance/investments.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:investments')">
+                                    <span class="blue">Investments</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.nasdaq.com/personal-finance/small-business.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:small-business')">
+                                    <span class="blue">Small Business</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearB"></div>
+                    <div class="paddingL10px paddingR10px paddingB10px">
+                        <!--// START includes/main-navigation-featured-article.inc -->
+
+<div class="marginB5px">
+  <h4>Featured Article</h4>
+</div>
+<table>
+  <tr>
+    <!--
+		<td valign="top" width="355">
+			<a href="https://mh214.isrefer.com/go/NASW/NDQCA/?utm_source=nasdaq-promotion-web&utm_medium=nasdaq-618sandy-website&utm_campaign=nasdaq-618sandy-website" target="_blank" rel="nofollow" class="floatL paddingT5px" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:featured-article')">
+				<img src="http://www.nasdaq.com/images/Webinar_Betner355x100_7202015.jpg" width="355" height="100" border="0" />
+			</a>
+		</td>
+-->
+
+    <td valign="top" width="100">
+      <a href="http://www.nasdaq.com/article/40-ways-to-save-money-over-the-holidays-cm700010" class="floatL paddingT5px" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:featured-article')">
+        <img src="http://www.nasdaq.com/images/news/1028shop.jpg" width="100" height="100" border="0" />
+      </a>
+    </td>
+    <td valign="top" class="floatL paddingL15px">
+		<a href="http://www.nasdaq.com/article/40-ways-to-save-money-over-the-holidays-cm700010" class="fontS14px" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:featured-article')">
+		40 Ways to Save Money Over the Holidays
+		</a>
+      	<br />
+		<p>Keep your sanity - and wallet - intact this year</p>
+    </td>
+
+  </tr>
+</table>
+
+<!--// END includes/main-navigation-featured-article.inc -->
+
+                    </div>
+                </div>
+            </li>
+            <li id="site-nav-nasdaq">
+                <a href="http://community.nasdaq.com/" data-click-event="nav:my-nasdaq:my-nasdaq-hub" onclick="triggerAsyncOmnitureClickEvent('nav:my-nasdaq:my-nasdaq-hub')">
+					<span>My Nasdaq</span>
+				</a>
+				<div class="global_dropdown">
+					<div class="floatL half">
+						<ul class="primary-drop">
+							<li>
+								<span>Stock Ratings</span>
+							</li>
+							<li>
+								<a href="http://community.nasdaq.com/MyRatings.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:my-nasdaq:stock-ratings')">
+									My Ratings
+								</a>
+							</li>
+						</ul>
+						<ul class="primary-drop">
+							<li>
+								<span>Smart Portfolio</span>
+							</li>
+							<li>
+								<a href="https://stocktracker.nasdaq.com/smart-portfolio/welcome" onclick="triggerAsyncOmnitureClickEvent('nav:my-nasdaq:overview')">Overview</a>
+							</li>
+							<li>
+								<a href="https://stocktracker.nasdaq.com/smart-portfolio/holdings/holdings" onclick="triggerAsyncOmnitureClickEvent('nav:my-nasdaq:holdings')">My Holdings</a>
+							</li>
+							<li>
+								<a href="https://stocktracker.nasdaq.com/smart-portfolio/analysis/overview" onclick="triggerAsyncOmnitureClickEvent('nav:my-nasdaq:portfolio-analysis')">My Portfolio Analysis</a>
+							</li>
+							<li>
+								<a href="https://stocktracker.nasdaq.com/smart-portfolio/insights" onclick="triggerAsyncOmnitureClickEvent('nav:my-nasdaq:insights')">Crowd Insights</a>
+							</li>
+							<li>
+								<a href="https://stocktracker.nasdaq.com/smart-portfolio/performance" onclick="triggerAsyncOmnitureClickEvent('nav:my-nasdaq:performance')">My Performance</a>
+							</li>
+						</ul>
+						<ul class="primary-drop">
+							<li>
+								<a href="#stock-searches" title="Configure your experience" class="lightbox-call" onclick="triggerAsyncOmnitureClickEvent('nav:my-nasdaq:customize')">
+									<span aria-hidden="true" data-icon="g" id="search-preferences" class="search-preferences blue">
+										Customize Your <br /> Experience
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div id="communitynav" class="floatR half">
+						<ul class="primary-drop">
+							<li>
+								<p>Join the NASDAQ Community today and get free, instant access to portfolios, stock ratings, real-time alerts, and more!</p>
+								<a href="https://community.nasdaq.com/" onclick="triggerAsyncOmnitureClickEvent('nav:my-nasdaq:register')">
+									<span class="blue">Join Today</span>
+								</a>
+							</li>
+						</ul>
+						<ul class="primary-drop">
+							<li>
+								<div class="marginB10px">
+									<h4>Already a member?</h4>
+								</div>
+								<a href="https://community.nasdaq.com/login.aspx" class="blue-button" onclick="triggerAsyncOmnitureClickEvent('nav:my-nasdaq:login')">Login</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+            </li>
+	    </ul>
+    </nav>
+	<div id="global_nav_placeholder"></div>
+    <div class="global_search" id="global_search">
+        <div class="wrapper">
+            <div class="left-ad-unit120">
+                <script type="text/javascript" language="javascript">
+                    makeAd('','120x60','bookend_left',is_dartZone,'','');
+                </script>
+                <script type="text/javascript" language="javascript">
+                    makeAd('','120x60','Bookend_Left_In',is_dartZone,'','');
+                </script>
+            </div>
+            <!--//End 120x60 Ad Unit -->
+            <form method="post" action="/" id="stock-search" class="stock-search" onsubmit="return false;">
+				<div id="stock-search-wrap">
+					<label for="stock-search-text">
+						<input type="text" name="stock-search-text" id="stock-search-text" class="ajax-search" placeholder="Enter symbol, name or keyword" />
+						<button type="submit" id="stock-search-submit"><span>Search</span></button>
+					</label>
+				</div>
+            </form>
+            <script type="text/javascript">
+				if(!isIEBrowser())
+				{
+	                $(function(){
+		                $('#stock-search-text').focus();
+	                });
+				}
+                Nasdaq_Quotesearch.init();
+            </script>
+            <div class="right-ad-unit120">
+                <script type="text/javascript" language="javascript">
+                    makeAd('','120x60','Bookend_Right',is_dartZone,'','');
+                </script>
+                <script type="text/javascript" language="javascript">
+                    makeAd('','120x60','Bookend_Right_In',is_dartZone,'','');
+                </script>
+            </div>
+            <!--//End 120x60 Ad Unit -->
+        </div>
+    </div>
+
+    <div id="global_banner" class="wrapper">
+        <script type="text/javascript" language="JavaScript">
+            makeAd('','728x90,970x90,970x250',is_dartSite,is_dartZone,'','');
+        </script>
+    </div>
+	
+	<script>initNav();</script>
+</header><!--//End global_header-->
+
+<!--*************************************** END includes/global-masthead.inc ******************************************-->
+
+
+
+<script type="text/javascript">
+    displayLoginStatus(false, null, null, null, "http\x3a\x2f\x2fcommunity.nasdaq.com");
+	$(function(){
+        initFauxFollow(followObjID);
+    });
+</script>
+
+
+	<div id="container" class="wrap cf">
+		<!--
+        <div class="highlight">
+            <center>
+                <script src="http://www.nasdaq.com/aspx/indexrowhtml.aspx?indexname=NASDAQDJIASPXWITHOUTIMAGE"></script>
+            </center>
+        </div>
+		-->
+
+
+<div id="content">
+<!--**************************************Begin quote box*******************************************************-->
+		<div class="qbreadcrumb">
+			<span class="qbreadcrumb">
+
+	<a href="http://www.nasdaq.com">Home</a> &gt; <a href="http://www.nasdaq.com/quotes/">Quotes</a> &gt; 
+	<a href="http://www.nasdaq.com/symbol/goog">GOOG</a> &gt; 
+	<a href="http://www.nasdaq.com/quotes/historical-quotes.aspx">Historical Prices</a>
+	<!--BREADCRUMB-->
+
+			</span>
+		</div>	
+		
+		
+		<script type="text/javascript">defineABHC('start');</script>
+    
+    
+
+<!--// Begin includes/qwidget.ascx -->
+
+<div class="quotebar-wrap">
+
+<div class="header-wrap">
+    <div class="quote-wrap">
+	    <div class="quote-data-wrap">
+		    <div id="logo-wrap" class="floatL">
+			    
+			    <div class="clearB"></div>
+			    
+					<div id="followButtonNew" class="melt"></div>				    
+				
+		    </div>
+		    <div id="qwidget-quote-wrap">
+			    <div id="qwidget_pageheader"><h1> Historical Stock Prices</h1> <b></b></div>
+			    <div class="clearB"></div>
+			    <div id="qwidget_quote" class="floatL marginTB5px">
+                    
+			        <div class="qwidget-symbol">GOOG&nbsp;</div>
+                    
+				    <div id="qwidget_lastsale" class="qwidget-dollar">$795.23</div>
+	                <div class="qwidget-dollar"><div>*&nbsp;&nbsp;</div></div>
+				    <div id="qwidget_netchange" class="qwidget-cents qwidget-Red">0.12</div>
+	                <div id="qwidget-arrow"><div class="marginLR10px arrow-red"></div></div>
+				    <div id="qwidget_percent" class="qwidget-percent qwidget-Red" style="white-space:nowrap">0.02%</div>
+				    <a class="getAlerts" href="javascript:void(0)" onclick="getAlertHandler();"><span>Get GOOG Alerts</span></a><br />
+			    </div>
+			    <div id="qwidget_markettimedate" class="floatL paddingB15px">
+				    <small>
+				        *Delayed - data as of <span id="qwidget_markettime">Oct. 28, 2016 </span>&nbsp;-&nbsp;
+				        <a href="http://www.nasdaq.com/investing/online-brokers/" onclick="triggerAsyncOmnitureClickEvent('quotes:quote-bar:brokers')">
+				            Find a broker to begin trading GOOG now
+				        </a>
+				    </small>
+			    </div>
+		    </div>
+		    <div id="qwidget-sector-wrap">
+			    <span id="qbar_exchangeLabel"><b>Exchange:</b>NASDAQ</span> <br />
+			    <span id="qbar_sectorLabel"><b>Industry: </b><a href="http://www.nasdaq.com/screening/companies-by-industry.aspx?industry=Technology">Technology</a></span> <br />
+			    <b>Community Rating:</b> <script src="http://www.nasdaq.com/aspx/community/sentiment.aspx?selected=GOOG&amp;size=small"></script> <br />
+			    
+	
+			    
+
+			    
+		    </div>
+		    <div id="qwidget-sector-wrap" class="marginR10px">
+		        <script type="text/javascript">
+                    makeAd('3','120x60','box_button',is_dartZone,'','');
+                    var followObjID = "symbol_02079K107";
+                    var followObjTitle = "Alphabet Inc.";
+                    var followObj = {"object_id":"symbol_02079K107","object_type":"company","title":"Alphabet Inc.","permalink":"http://www.nasdaq.com/symbol/goog","image":null,"data":{"symbol":"GOOG"}};
+					
+                </script>
+				
+<script>
+var SymbolType = "USEquity";
+var StockIndustry = "Technology";
+</script>
+		    </div>
+	    </div>
+    </div><!--end quote-wrap-->
+</div><!-- end header-wrap -->
+
+</div>
+
+<!--// End includes/qwidget.ascx -->
+    <script type="text/javascript">
+var quoteBoxSelectedSymbol="GOOG";
+
+var quoteBoxSymbolArray = new Array(1);
+quoteBoxSymbolArray[0] = "GOOG";
+
+var quoteBoxNumSymbols = 1;
+
+var jsUserAgent = "python-requests\x2f2.11.1";
+
+var qbUseNewNav = true;
+</script>
+
+<script type="text/javascript"><!--inline script should be added to .inc files if we cannot added to if browser caching is a concern-->
+    // URL variables
+    var quoteURL = 'http://www.nasdaq.com/';
+    var wwwURL = 'http://www.nasdaq.com/';
+    var earningsURL = 'http://www.nasdaq.com/';
+    var screeningURL = 'http://www.nasdaq.com/';
+    var bLookup = false;
+    var selected = quoteBoxSelectedSymbol;
+
+    if (typeof qbUseNewNav == "undefined")
+        qbUseNewNav = false;
+
+    if (quoteBoxNumSymbols > 13) {
+        addStyle("dynamic", "#quotesnav_symbols_l {display:block;}");//
+        addStyle("dynamic", "#quotesnav_symbols_l_border {display:block;}");//
+    }
+    else {
+        addStyle("dynamic", "#quotesnav_symbols_l {display:none;}");//
+        addStyle("dynamic", "#quotesnav_symbols_l_border {display:none;}");//
+    }
+
+    addStyle("dynamic", "div.qbreadcrumb {left: 0px !important;height:0px;left:0px;top:0px;position:relative;width:800pxfloat:left;}");
+    addStyle("dynamic", "#qtopAd-graybg{float:left;font-size:11px;height:33px;padding:17px 0 0 5px;width:661px;position:relative;}");//
+    addStyle("dynamic", "#qtopAd-graybg-inside, #qtopAd-sponsored{float:left;}");//
+
+    function loginForAlerts() {
+        open_new_window("http://community.nasdaq.com/login.aspx?turl=" + encodeURIComponent("http://www.nasdaq.com/alerts/alertmanager.aspx?symbol=" + quoteBoxSelectedSymbol), 1020, 980, false, true, false);
+    }
+</script>
+<div class="symbol">
+    <div id="quotesnav_symbols_wrap" class="floatR">
+        <div id="quotesnav_symbols" class="quotesnav floatR">
+	        <div class="jcarousel-skin-tango">
+		        <div class="jcarousel-container jcarousel-container-horizontal">
+		            <div class="jcarousel-clip jcarousel-clip-horizontal">
+				        <ul class="jcarousel-list jcarousel-list-horizontal" id="mycarousel" style="width:795px">
+<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-0 jcarousel-item-0-horizontal" jcarouselindex="0"><span><a class="qn_ontab" href="http://www.nasdaq.com/symbol/goog/historical">GOOG</a></span></li>
+</ul>
+  			        </div>
+		        </div>
+	        </div>
+        </div>
+
+        <div id="quotesnav_symbols_border" class="quotesnav floatR">&nbsp;</div>
+
+        <div id="quotesnav_symbols_l" class="quotesnav floatR">
+	        <div class="jcarousel-skin-tango">
+		        <div class="jcarousel-container jcarousel-container-horizontal">
+		            <div class="jcarousel-clip jcarousel-clip-horizontal">
+				        <ul class="jcarousel-list jcarousel-list-horizontal" id="mycarousel" style="width:795px">
+</ul>
+  			        </div>
+		        </div>
+	        </div>
+        </div>
+
+        <div id="quotesnav_symbols_l_border" class="quotesnav floatR">&nbsp;</div>
+    </div>
+    </div>
+
+<div id="panel_left" class="vertical-nav-wrap floatL">
+
+    <div class="edit-symbol">
+		<form name="frmAddASymbol" method="get" onsubmit="return false">
+			<span>
+				<span class="displayIB ValignM marginB10px edit-symbol-icon"></span>
+                <a href="javascript:void(0);" onclick="triggerAsyncOmnitureClickEvent('quotes:modal:edit-symbols');pushmodal('edit_symbol_modal_box','editSymbolListModalBoxInit()');">Edit Symbol List</a>
+			</span>
+            <br />
+			<span><!--id added here-->
+				<span class="displayIB ValignM symbol-lookup-icon"></span>
+                <a href="javascript:void(0);" onclick="triggerAsyncOmnitureClickEvent('quotes:modal:symbol-lookup');pushmodal('symbol_lookup_modal_box','symbolLookupModalBoxinit(\'stock\')')">Symbol Lookup</a>
+			</span>	
+		</form>
+    </div><!--end qn_addsymbol-->
+    
+	<div class="marginB10px">
+        <script type="text/javascript">makeAd('', '120x60', 'leftnav_top', is_dartZone, '', '');</script>
+    </div>
+	
+    <div id="quotesnav" class="vertical-nav floatL">
+
+        <form name="quotenav" id="quotenav" method="get" onsubmit="return CheckInput()">
+		    <input id="mode" type="hidden">
+		    <input id="kind" type="hidden">
+		    <input id="timeframe" type="hidden">
+		    <input id="intraday" type="hidden">
+		    <input id="charttype" type="hidden">
+		    <input id="splits" type="hidden">
+		    <input id="earnings" type="hidden">
+		    <input id="movingaverage" type="hidden">
+		    <input id="lowerstudy" type="hidden">
+		    <input id="comparison" type="hidden">
+		    <input id="index" type="hidden">
+		    <input id="FormType" type="hidden">
+		    <input id="mkttype" type="hidden">
+		    <input id="pathname" type="hidden">
+		    <input id="headlinesswitch" type="hidden">
+		    <input id="pressreleaseswitch" type="hidden">
+		    <input id="extendedswitch" type="hidden">
+	        <select style="display:none" id="quotepage" onchange="CheckInput()">
+			    <option value="NasdaqLastsale">Real Time</option>
+			    <option value="nlstrades">NLS Trade Reporting</option>
+			    <option value="quick">FlashQuotes</option>
+			    <option value="multi">InfoQuotes</option>
+			    <option value="summaryquote">Summary Quote</option>
+			    <option value="charting">Charts</option>
+			    <option value="dynamic_charting">Interactive Charts</option>
+			    <option value="premarketcharts">Pre-Market Charts</option>
+			    <option value="afterhourscharts">After Hours Charts</option>
+			    <option value="redpage">Revenue / EPS Summary</option>
+			    <option value="full">Company Financials</option>
+			    <option value="competitor">- View Competitors</option>
+			    <option value="short">- Short Interest</option>
+			    <option value="companynews">Company News</option>
+			    <option value="companypressrelease">Press Releases</option>
+			    <option value="companynewsthestreet">Company News</option>
+			    <option value="companynewsthefool">Press Releases</option>
+			    <option value="sentiment">Sentiment</option>					
+			    <option value="analystinfo">Analyst Stock Research</option>
+			    <option value="stockreports">Stock Report</option>
+			    <option value="filings">SEC Filings</option>
+			    <option value="holdingssummary">- Holdings/Insider Summary</option>
+			    <option value="holdings">- Institutional Holdings</option>
+			    <option value="insiderform4">- Insider Form 4</option>
+			    <!--<option value="insiderform144">- Insider Form 144</option>-->
+			    <option value="options">Equity Options</option>
+			    <option value="premarket">Pre-Market Quotes</option>
+			    <option value="afterhours">After Hours Quotes</option>
+			    <option value="stockconsultant">Company Research</option>
+			    <option value="stockconsultant">- StockConsultant</option>
+			    <option value="stockcomparison">Stock Comparison</option>
+			    <option value="guruanalysis">- Guru Analysis</option>
+			    <option value="annualrpt">Annual Report</option>
+			    <option value="historical_quotes">Historical Quotes</option>
+			    <option value="CallTranscripts">Call Transcripts</option>
+			    <option value="dividend_history">Dividend History</option>
+			    <option value="guru-lynch">Lynch Analysis</option>
+			    <option value="guru-graham">Graham Analysis</option>
+			    <option value="guru-validea">Validea Momentum Analysis</option>
+			    <option value="guru-fool">Fool Analysis</option>
+			    <option value="guru-dreman">Dreman Analysis</option>
+			    <option value="guru-zweig">Zweig Analysis</option>
+			    <option value="guru-fisher">Fisher Analysis</option>
+			    <option value="guru-oshaughnessy">OShaughnessy Analysis</option>
+                <option value="etfdetail">ETF detail</option>
+                <option value="etfprofile">ETF Profile</option>
+			    <option value="chartingfunds">Comparison Charts</option>
+	        </select>
+        </form>
+	
+        <iframe name="validateSymbolForm" id="validateSymbolForm" frameborder="0" height="0" width="0"></iframe>
+		
+
+        <h5>Symbol List Views</h5>
+            <a id="quicklink" href="http://www.nasdaq.com/aspx/flashquotes.aspx?symbol=GOOG&amp;selected=GOOG" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:flashquote')">FlashQuotes</a>
+            <a id="multilink" href="http://www.nasdaq.com/aspx/infoquotes.aspx?symbol=GOOG&amp;selected=GOOG" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:infoquote')">InfoQuotes</a>
+
+        <h5> 
+                    Stock Details
+           
+        </h5>
+            <a id="summaryquotelink" href="http://www.nasdaq.com/symbol/goog" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:summary')">Summary Quote</a>
+		        
+            <a id="NasdaqLastsalelink" href="http://www.nasdaq.com/symbol/goog/real-time" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:real-time')">Real-Time Quote</a>
+            <a id="afterhourslink" href="http://www.nasdaq.com/symbol/goog/after-hours" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:after-hours')">After Hours Quote</a>
+            <a id="premarketlink" href="http://www.nasdaq.com/symbol/goog/premarket" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:pre-market')">Pre-market Quote</a>
+	        <a id="historical_quoteslink" href="http://www.nasdaq.com/symbol/goog/historical" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:historical')">Historical Quote</a>
+	        <a id="optionslink" href="http://www.nasdaq.com/symbol/goog/option-chain" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:option-chain')">Option Chain</a>	  
+      
+        <h5>CHARTS</h5>
+            <a id="chartinglink" href="http://www.nasdaq.com/symbol/goog/stock-chart" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:stock-chart')">Basic Chart</a>
+            <a id="dynamic_chartinglink" href="http://www.nasdaq.com/symbol/goog/interactive-chart" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:interactive-chart')">Interactive Chart</a>   
+  
+        <h5>
+		        
+    
+                COMPANY NEWS</h5>
+                    <a id="companynewslink" href="http://www.nasdaq.com/symbol/goog/news-headlines" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:news-headlines')">Company Headlines</a>
+                    <a id="companypressreleaselink" href="http://www.nasdaq.com/symbol/goog/press-releases" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:press-releases')">Press Releases</a>
+                    <a id="sentimentlink" href="http://www.nasdaq.com/symbol/goog/stream" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:stream')">Market Stream</a>
+        
+                
+    
+                <h5>STOCK ANALYSIS</h5>
+                    <a id="analystinfolink" href="http://www.nasdaq.com/symbol/goog/analyst-research" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:analyst-research')">Analyst Research</a>
+                    <a id="guruanalysislink" href="http://www.nasdaq.com/symbol/goog/guru-analysis" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:guru-analysis')">Guru Analysis</a>
+                    <a id="stockreportslink" href="http://www.nasdaq.com/symbol/goog/stock-report" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:stock-report')">Stock Report</a>
+                    <a id="competitorlink" href="http://www.nasdaq.com/symbol/goog/competitors" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:competitors')">Competitors</a>
+			        <a id="stockconsultantlink" href="http://www.nasdaq.com/symbol/goog/stock-consultant" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:stock-consultant')">Stock Consultant</a>
+			        <a id="stockcomparisonlink" href="http://www.nasdaq.com/symbol/goog/stock-comparison" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:stock-comparison')">Stock Comparison</a>
+                <h5>FUNDAMENTALS</h5>
+                    <a id="CallTranscriptslink" href="http://www.nasdaq.com/symbol/goog/call-transcripts" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:call-transcripts')">Call Transcripts</a>
+        	        <a id="annualrptlink" href="http://www.companyspotlight.com/partner?cp_code=NAS1&amp;ticker=GOOG" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:annual-report')">Annual Report</a>
+                    <a id="fulllink" href="http://www.nasdaq.com/symbol/goog/financials?query=income-statement" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:income-statement')">Income Statement</a>
+                    <a id="redpagelink" href="http://www.nasdaq.com/symbol/goog/revenue-eps" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:revenue-eps')">Revenue/EPS</a>
+                    <a id="filingslink" href="http://www.nasdaq.com/symbol/goog/sec-filings" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:sec-filings')">SEC Filings</a>
+			        <a id="shortlink" href="http://www.nasdaq.com/symbol/goog/short-interest" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:short-interest')">Short Interest</a>
+			        <a id="dividend_historylink" href="http://www.nasdaq.com/symbol/goog/dividend-history" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:dividend-history')">Dividend History</a>
+                <h5>HOLDINGS</h5>
+                    <a id="holdingssummarylink" href="http://www.nasdaq.com/symbol/goog/ownership-summary" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:ownership-summary')">Ownership Summary</a>
+                    <a id="holdingslink" href="http://www.nasdaq.com/symbol/goog/institutional-holdings" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:institutional-holdings')">Institutional Holdings</a>
+                    <a id="insiderform4link" href="http://www.nasdaq.com/symbol/goog/insider-trades" onclick="triggerAsyncOmnitureClickEvent('quotes:nav:insider-trades')">Insiders<br />(SEC Form 4)</a>
+
+            
+    </div><!-- quotesnav -->
+
+</div><!-- end panel left-->
+
+<!-- modal box implementations -->
+
+<!-- edit symbol box-->
+
+<div id="edit_symbol_modal_box" class="modal_content" style="width:410px;height:315px;top:100px;left:400px">
+	<!-- close button-->
+	<span class="close" onclick="popmodal()">CLOSE<span class="x">X</span></span><br />
+	<!-- header -->
+	<div class="TalignC">
+		<h2>Edit Symbol List</h2>
+	</div>
+	<!-- text -->
+	<div class="marginL10px">
+		<p>Enter up to 25 symbols separated by commas or spaces in the text box below. These symbols will be available during your session for use on applicable pages.</p>
+	</div>
+
+	<div class="marginL10px">
+		<!-- input box -->
+		<div class="floatL">
+			<textarea rows="3" cols="40" name="modalinput" id ="modalinput" onkeypress="if(event.keyCode ==13){gomodal();}else if(event.keyCode == 27){popmodal();}"></textarea>
+		</div>
+		<!-- right side controls -->
+		<div class="floatL marginL10px">
+			<a href="javascript:void(0)" onclick="gomodal();" class="lightgreen-button marginB5px TalignC">Go Now</a>
+            <br />
+			<a href="javascript:void(0)" onclick="clearlist();" class="red-button">Clear List</a>			
+		</div>
+	</div>
+
+    <div class="clearB"></div>
+
+	<!-- symbol lookup text-->
+	<div class="marginL10px">
+		<p>
+            Don't know the stock symbol?  Use the 
+            <a href="javascript:void(0);" onclick="triggerAsyncOmnitureClickEvent('edit-symbols:modal:symbol-lookup');pushmodal('symbol_lookup_modal_box','symbolLookupModalBoxinit()')">Symbol Lookup</a> tool.
+	        <br/>
+		    <input type="checkbox" id="orderlistcontrol" class="marginR5px" onclick="triggerAsyncOmnitureClickEvent('edit-symbols:checkbox:alphabetize')" />Alphabetize the sort order of my symbols
+		</p>
+	</div>
+
+</div>
+
+<!-- end edit symbol box -->
+
+<!-- symbol lookup modal box -->
+<div id="symbol_lookup_modal_box" class="modal_content" style="width:440px;min-height:370px;top:100px;left:35%">
+	<!-- close button-->
+	<span class="close" onclick="popmodal()">CLOSE<span class="x">X</span></span>
+	<div class="clearB paddingT5px"></div>
+	<table width="415" class="marginL5px">
+        <tr><td>&nbsp;</td></tr>
+		<tr><td><h2>Symbol Lookup</h2></td></tr>
+	</table>
+	<iframe id="msymbollookupframe" frameborder="0" style="width:100%;height:255px"></iframe>
+</div>
+<!-- end symbol lookup modal box -->
+<!-- begin lightbox backdrop -->
+<table class="backdrop" id="customModal">
+	<tr>
+		<td>
+            <!-- begin lightboxness -->
+            <div class="lightbox" id="followPromo">
+				<!-- close button-->
+				<span class="close" onclick="close_modal()">CLOSE<span class="x">X</span></span>
+                <h2>Investing just got easier&#8230;</h2>
+                <h4>Sign up now to become a NASDAQ.com member and begin receiving instant notifications when key events occur that affect the stocks you follow.</h4>
+                <a class="faux-button lightgreen-button" href="http://community.nasdaq.com/" onclick="triggerAsyncOmnitureClickEvent('quotes:faux-follow:access-now')">
+                    <span>Access Now</span>
+                </a>
+                <div class="clearB"></div>
+                
+            </div>
+            <!-- end lightboxness -->
+         </td>
+	</tr>
+</table>
+<!-- end lightbox backdrop -->
+
+<script type="text/javascript">
+    function close_modal()//closes all custom modal boxes
+    {
+        $('#customModal .lightbox').removeClass('visible');
+        $('#customModal').removeClass('visible');
+    }
+
+    function open_modal(contentID)//opens a custom modal box, contentID is the unique ID
+    {
+        $('#customModal').addClass('visible'); //display the loading box
+        $('#' + contentID).addClass('visible');
+    }
+
+    function switch_to_modal(contentID)//switches from one custom modal box to another, contentID is the unique ID
+    {
+        $('#customModal .lightbox').removeClass('visible');
+        $('#' + contentID).addClass('visible');
+    }
+</script>
+
+<!--  cookie checkbox -->
+<div class="quotenav_checkbox-leftgray">
+	<input type="checkbox" id="cookiepref" onclick="triggerAsyncOmnitureClickEvent('quotes:checkbox:save-stocks');toggleCookieNav()" />&nbsp;Save Stocks
+</div>
+
+<!-- cookie checkbox  -->
+
+<!--******start 980 unit this div is for the 980x20 ad unit.******-->
+<div id="qtop-graybg">
+
+    <div id="qtop-graybg-inside">
+        <script type="text/javascript">
+            makeAd('8', '980x20', is_dartSite, is_dartZone, '', '');
+        </script>
+    </div>
+
+</div>
+
+<!--**************************************End 980 unit**********************************************************-->
+
+    
+<!--***************************************End quote box********************************************************-->
+
+
+
+			<div id="left-column-div">
+<!-- *********************************************** START Left-column **********************************************-->
+
+
+    <script type="text/javascript">
+        var SelectedSymbol = '';
+    </script>
+
+    <h4>Get up to 10 years of daily historical stock prices &amp; volumes.</h4>
+    <div class="floatL">
+        <p>Select the Timeframe:</p>
+    </div>
+    <div class="floatL marginT10px fontS14px">
+        <select id="ddlTimeFrame" name="ddlTimeFrame" onchange="getQuotes(false)">
+            <option value="5d">5 Days</option>
+            <option value="1m">1 Month</option>
+            <option value="3m" selected="selected">3 Months</option>
+            <option value="6m">6 Months</option>
+            <option value="1y">1 Year</option>
+            <option value="18m">18 Months</option>
+            <option value="2y">2 Years</option>
+            <option value="3y">3 Years</option>
+            <option value="4y">4 Years</option>
+            <option value="5y">5 Years</option>
+            <option value="6y">6 Years</option>
+            <option value="7y">7 Years</option>
+            <option value="8y">8 Years</option>
+            <option value="9y">9 Years</option>
+            <option value="10y">10 Years</option>
+        </select>
+    </div>
+    <div class="clearB"></div>
+    <div class="realtiveP">
+	    <div id="ajaxloader" class="ajax_loading_wrap" style="display:none">
+            <img src="http://www.nasdaq.com/images/ajax-loader-2.gif" width="32" height="32" alt="ajax loader" />
+	    </div>
+    </div>
+    <div id="historicalContainer" class="genTable">
+        <div id="quotes_content_left_pnlAJAX">
+	
+            <h3 class="table-headtag">
+                Results for: 3 Month, From 
+28-JUL-2016  TO 28-OCT-2016 
+            </h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Open</th>
+                        <th>
+                            <a href="javascript:void(0)" class="tt show-link" id="high" onmouseover="showDelayedToolTip('high')" onmouseout="hideToolTip('high')">
+                                High
+                                <span class="tooltipLG">
+                                    <span class="topLG"></span>
+                                    <span class="middleLG">
+                                        "High" is the highest sales price the stock has achieved during the regular trading hours, the intra-day high.
+                                    </span>
+                                    <span class="bottomLG"></span>
+                                </span>
+                            </a>
+                        </th>
+                        <th>
+                            <a href="javascript:void(0)" class="tt show-link" id="low" onmouseover="showDelayedToolTip('low')" onmouseout="hideToolTip('low')">
+                                Low
+                                <span class="tooltipLG">
+                                    <span class="topLG"></span>
+                                    <span class="middleLG">
+                                        "Low" is the lowest sales price the stock has fallen to during the regular trading hours, the intra-day low.
+                                    </span>
+                                    <span class="bottomLG"></span>
+                                </span>
+                            </a>
+                        </th>
+                        <th>
+                            <a href="javascript:void(0)" class="tt show-link" id="close_last" onmouseover="showDelayedToolTip('close_last')" onmouseout="hideToolTip('close_last')">
+                                Close / Last
+                                <span class="tooltipLG">
+                                    <span class="topLG"></span>
+                                    <span class="middleLG">
+                                        "Close" is the period at the end of the trading session. Sometimes used to refer to closing price.
+                                    </span>
+                                    <span class="bottomLG"></span>
+                                </span>
+                            </a>
+                        </th>
+                        <th>
+                            <a href="javascript:void(0)" class="tt show-link" id="volume" onmouseover="showDelayedToolTip('volume')" onmouseout="hideToolTip('volume')">
+                                Volume
+                                <span class="tooltipLG">
+                                    <span class="topLG"></span>
+                                    <span class="middleLG">
+                                        "Volume" The closing daily official volumes represented graphically for each trading day.
+                                    </span>
+                                    <span class="bottomLG"></span>
+                                </span>
+                            </a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    
+                            <tr>
+                                <td>
+                                    10/28/2016
+                                </td>
+                                <td>
+                                    808.35
+                                </td>
+                                <td>
+                                    815.49
+                                </td>
+                                <td>
+                                    793.59
+                                </td>
+                                <td>
+                                    795.37
+                                </td>
+                                <td>
+                                    4,261,912
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    10/27/2016
+                                </td>
+                                <td>
+                                    801
+                                </td>
+                                <td>
+                                    803.49
+                                </td>
+                                <td>
+                                    791.5
+                                </td>
+                                <td>
+                                    795.35
+                                </td>
+                                <td>
+                                    2,723,097
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    10/26/2016
+                                </td>
+                                <td>
+                                    806.34
+                                </td>
+                                <td>
+                                    806.98
+                                </td>
+                                <td>
+                                    796.32
+                                </td>
+                                <td>
+                                    799.07
+                                </td>
+                                <td>
+                                    1,645,403
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    10/25/2016
+                                </td>
+                                <td>
+                                    816.68
+                                </td>
+                                <td>
+                                    816.68
+                                </td>
+                                <td>
+                                    805.14
+                                </td>
+                                <td>
+                                    807.67
+                                </td>
+                                <td>
+                                    1,575,020
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    10/24/2016
+                                </td>
+                                <td>
+                                    804.9
+                                </td>
+                                <td>
+                                    815.18
+                                </td>
+                                <td>
+                                    804.82
+                                </td>
+                                <td>
+                                    813.11
+                                </td>
+                                <td>
+                                    1,693,162
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    10/21/2016
+                                </td>
+                                <td>
+                                    795
+                                </td>
+                                <td>
+                                    799.5
+                                </td>
+                                <td>
+                                    794
+                                </td>
+                                <td>
+                                    799.37
+                                </td>
+                                <td>
+                                    1,262,042
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    10/20/2016
+                                </td>
+                                <td>
+                                    803.3
+                                </td>
+                                <td>
+                                    803.97
+                                </td>
+                                <td>
+                                    796.03
+                                </td>
+                                <td>
+                                    796.97
+                                </td>
+                                <td>
+                                    1,755,546
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    10/19/2016
+                                </td>
+                                <td>
+                                    798.86
+                                </td>
+                                <td>
+                                    804.63
+                                </td>
+                                <td>
+                                    797.635
+                                </td>
+                                <td>
+                                    801.56
+                                </td>
+                                <td>
+                                    1,762,990
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    10/18/2016
+                                </td>
+                                <td>
+                                    787.85
+                                </td>
+                                <td>
+                                    801.61
+                                </td>
+                                <td>
+                                    785.565
+                                </td>
+                                <td>
+                                    795.26
+                                </td>
+                                <td>
+                                    2,046,338
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    10/17/2016
+                                </td>
+                                <td>
+                                    779.8
+                                </td>
+                                <td>
+                                    785.85
+                                </td>
+                                <td>
+                                    777.5
+                                </td>
+                                <td>
+                                    779.96
+                                </td>
+                                <td>
+                                    1,091,524
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    10/14/2016
+                                </td>
+                                <td>
+                                    781.65
+                                </td>
+                                <td>
+                                    783.95
+                                </td>
+                                <td>
+                                    776
+                                </td>
+                                <td>
+                                    778.53
+                                </td>
+                                <td>
+                                    851,512
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    10/13/2016
+                                </td>
+                                <td>
+                                    781.22
+                                </td>
+                                <td>
+                                    781.22
+                                </td>
+                                <td>
+                                    773
+                                </td>
+                                <td>
+                                    778.19
+                                </td>
+                                <td>
+                                    1,360,619
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    10/12/2016
+                                </td>
+                                <td>
+                                    783.76
+                                </td>
+                                <td>
+                                    788.13
+                                </td>
+                                <td>
+                                    782.06
+                                </td>
+                                <td>
+                                    786.14
+                                </td>
+                                <td>
+                                    935,138
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    10/11/2016
+                                </td>
+                                <td>
+                                    786.66
+                                </td>
+                                <td>
+                                    792.28
+                                </td>
+                                <td>
+                                    780.58
+                                </td>
+                                <td>
+                                    783.07
+                                </td>
+                                <td>
+                                    1,371,461
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    10/10/2016
+                                </td>
+                                <td>
+                                    777.71
+                                </td>
+                                <td>
+                                    789.38
+                                </td>
+                                <td>
+                                    775.87
+                                </td>
+                                <td>
+                                    785.94
+                                </td>
+                                <td>
+                                    1,161,410
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    10/07/2016
+                                </td>
+                                <td>
+                                    779.66
+                                </td>
+                                <td>
+                                    779.66
+                                </td>
+                                <td>
+                                    770.75
+                                </td>
+                                <td>
+                                    775.08
+                                </td>
+                                <td>
+                                    932,444
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    10/06/2016
+                                </td>
+                                <td>
+                                    779
+                                </td>
+                                <td>
+                                    780.48
+                                </td>
+                                <td>
+                                    775.54
+                                </td>
+                                <td>
+                                    776.86
+                                </td>
+                                <td>
+                                    1,066,910
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    10/05/2016
+                                </td>
+                                <td>
+                                    779.31
+                                </td>
+                                <td>
+                                    782.07
+                                </td>
+                                <td>
+                                    775.65
+                                </td>
+                                <td>
+                                    776.47
+                                </td>
+                                <td>
+                                    1,457,661
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    10/04/2016
+                                </td>
+                                <td>
+                                    776.03
+                                </td>
+                                <td>
+                                    778.71
+                                </td>
+                                <td>
+                                    772.89
+                                </td>
+                                <td>
+                                    776.43
+                                </td>
+                                <td>
+                                    1,198,361
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    10/03/2016
+                                </td>
+                                <td>
+                                    774.25
+                                </td>
+                                <td>
+                                    776.065
+                                </td>
+                                <td>
+                                    769.5
+                                </td>
+                                <td>
+                                    772.56
+                                </td>
+                                <td>
+                                    1,276,614
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/30/2016
+                                </td>
+                                <td>
+                                    776.33
+                                </td>
+                                <td>
+                                    780.94
+                                </td>
+                                <td>
+                                    774.09
+                                </td>
+                                <td>
+                                    777.29
+                                </td>
+                                <td>
+                                    1,583,293
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/29/2016
+                                </td>
+                                <td>
+                                    781.44
+                                </td>
+                                <td>
+                                    785.8
+                                </td>
+                                <td>
+                                    774.232
+                                </td>
+                                <td>
+                                    775.01
+                                </td>
+                                <td>
+                                    1,310,252
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/28/2016
+                                </td>
+                                <td>
+                                    777.85
+                                </td>
+                                <td>
+                                    781.81
+                                </td>
+                                <td>
+                                    774.97
+                                </td>
+                                <td>
+                                    781.56
+                                </td>
+                                <td>
+                                    1,108,249
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/27/2016
+                                </td>
+                                <td>
+                                    775.5
+                                </td>
+                                <td>
+                                    785.9899
+                                </td>
+                                <td>
+                                    774.308
+                                </td>
+                                <td>
+                                    783.01
+                                </td>
+                                <td>
+                                    1,152,760
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/26/2016
+                                </td>
+                                <td>
+                                    782.74
+                                </td>
+                                <td>
+                                    782.74
+                                </td>
+                                <td>
+                                    773.07
+                                </td>
+                                <td>
+                                    774.21
+                                </td>
+                                <td>
+                                    1,531,788
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/23/2016
+                                </td>
+                                <td>
+                                    786.59
+                                </td>
+                                <td>
+                                    788.93
+                                </td>
+                                <td>
+                                    784.15
+                                </td>
+                                <td>
+                                    786.9
+                                </td>
+                                <td>
+                                    1,411,439
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/22/2016
+                                </td>
+                                <td>
+                                    780
+                                </td>
+                                <td>
+                                    789.85
+                                </td>
+                                <td>
+                                    778.44
+                                </td>
+                                <td>
+                                    787.21
+                                </td>
+                                <td>
+                                    1,483,899
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/21/2016
+                                </td>
+                                <td>
+                                    772.66
+                                </td>
+                                <td>
+                                    777.16
+                                </td>
+                                <td>
+                                    768.301
+                                </td>
+                                <td>
+                                    776.22
+                                </td>
+                                <td>
+                                    1,166,290
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/20/2016
+                                </td>
+                                <td>
+                                    769
+                                </td>
+                                <td>
+                                    773.33
+                                </td>
+                                <td>
+                                    768.53
+                                </td>
+                                <td>
+                                    771.41
+                                </td>
+                                <td>
+                                    975,434
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/19/2016
+                                </td>
+                                <td>
+                                    772.42
+                                </td>
+                                <td>
+                                    774
+                                </td>
+                                <td>
+                                    764.4406
+                                </td>
+                                <td>
+                                    765.7
+                                </td>
+                                <td>
+                                    1,171,969
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/16/2016
+                                </td>
+                                <td>
+                                    769.75
+                                </td>
+                                <td>
+                                    769.75
+                                </td>
+                                <td>
+                                    764.66
+                                </td>
+                                <td>
+                                    768.88
+                                </td>
+                                <td>
+                                    2,047,036
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/15/2016
+                                </td>
+                                <td>
+                                    762.89
+                                </td>
+                                <td>
+                                    773.8
+                                </td>
+                                <td>
+                                    759.96
+                                </td>
+                                <td>
+                                    771.76
+                                </td>
+                                <td>
+                                    1,344,945
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/14/2016
+                                </td>
+                                <td>
+                                    759.61
+                                </td>
+                                <td>
+                                    767.68
+                                </td>
+                                <td>
+                                    759.11
+                                </td>
+                                <td>
+                                    762.49
+                                </td>
+                                <td>
+                                    1,093,723
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/13/2016
+                                </td>
+                                <td>
+                                    764.48
+                                </td>
+                                <td>
+                                    766.2195
+                                </td>
+                                <td>
+                                    755.8
+                                </td>
+                                <td>
+                                    759.69
+                                </td>
+                                <td>
+                                    1,394,158
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/12/2016
+                                </td>
+                                <td>
+                                    755.13
+                                </td>
+                                <td>
+                                    770.29
+                                </td>
+                                <td>
+                                    754.0001
+                                </td>
+                                <td>
+                                    769.02
+                                </td>
+                                <td>
+                                    1,310,493
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/09/2016
+                                </td>
+                                <td>
+                                    770.1
+                                </td>
+                                <td>
+                                    773.245
+                                </td>
+                                <td>
+                                    759.66
+                                </td>
+                                <td>
+                                    759.66
+                                </td>
+                                <td>
+                                    1,879,903
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/08/2016
+                                </td>
+                                <td>
+                                    778.59
+                                </td>
+                                <td>
+                                    780.35
+                                </td>
+                                <td>
+                                    773.58
+                                </td>
+                                <td>
+                                    775.32
+                                </td>
+                                <td>
+                                    1,268,663
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/07/2016
+                                </td>
+                                <td>
+                                    780
+                                </td>
+                                <td>
+                                    782.73
+                                </td>
+                                <td>
+                                    776.2
+                                </td>
+                                <td>
+                                    780.35
+                                </td>
+                                <td>
+                                    893,874
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/06/2016
+                                </td>
+                                <td>
+                                    773.45
+                                </td>
+                                <td>
+                                    782
+                                </td>
+                                <td>
+                                    771
+                                </td>
+                                <td>
+                                    780.08
+                                </td>
+                                <td>
+                                    1,441,864
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/02/2016
+                                </td>
+                                <td>
+                                    773.01
+                                </td>
+                                <td>
+                                    773.9199
+                                </td>
+                                <td>
+                                    768.41
+                                </td>
+                                <td>
+                                    771.46
+                                </td>
+                                <td>
+                                    1,070,725
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    09/01/2016
+                                </td>
+                                <td>
+                                    769.25
+                                </td>
+                                <td>
+                                    771.02
+                                </td>
+                                <td>
+                                    764.3
+                                </td>
+                                <td>
+                                    768.78
+                                </td>
+                                <td>
+                                    925,019
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/31/2016
+                                </td>
+                                <td>
+                                    767.01
+                                </td>
+                                <td>
+                                    769.09
+                                </td>
+                                <td>
+                                    765.38
+                                </td>
+                                <td>
+                                    767.05
+                                </td>
+                                <td>
+                                    1,247,937
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/30/2016
+                                </td>
+                                <td>
+                                    769.33
+                                </td>
+                                <td>
+                                    774.466
+                                </td>
+                                <td>
+                                    766.84
+                                </td>
+                                <td>
+                                    769.09
+                                </td>
+                                <td>
+                                    1,129,932
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/29/2016
+                                </td>
+                                <td>
+                                    768.74
+                                </td>
+                                <td>
+                                    774.99
+                                </td>
+                                <td>
+                                    766.615
+                                </td>
+                                <td>
+                                    772.15
+                                </td>
+                                <td>
+                                    847,537
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/26/2016
+                                </td>
+                                <td>
+                                    769
+                                </td>
+                                <td>
+                                    776.0799
+                                </td>
+                                <td>
+                                    765.85
+                                </td>
+                                <td>
+                                    769.54
+                                </td>
+                                <td>
+                                    1,164,713
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/25/2016
+                                </td>
+                                <td>
+                                    767
+                                </td>
+                                <td>
+                                    771.89
+                                </td>
+                                <td>
+                                    763.1846
+                                </td>
+                                <td>
+                                    769.41
+                                </td>
+                                <td>
+                                    926,856
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/24/2016
+                                </td>
+                                <td>
+                                    770.58
+                                </td>
+                                <td>
+                                    774.5
+                                </td>
+                                <td>
+                                    767.07
+                                </td>
+                                <td>
+                                    769.64
+                                </td>
+                                <td>
+                                    1,071,569
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/23/2016
+                                </td>
+                                <td>
+                                    775.48
+                                </td>
+                                <td>
+                                    776.44
+                                </td>
+                                <td>
+                                    771.785
+                                </td>
+                                <td>
+                                    772.08
+                                </td>
+                                <td>
+                                    925,356
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/22/2016
+                                </td>
+                                <td>
+                                    773.27
+                                </td>
+                                <td>
+                                    774.54
+                                </td>
+                                <td>
+                                    770.0502
+                                </td>
+                                <td>
+                                    772.15
+                                </td>
+                                <td>
+                                    950,417
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/19/2016
+                                </td>
+                                <td>
+                                    775
+                                </td>
+                                <td>
+                                    777.1
+                                </td>
+                                <td>
+                                    773.13
+                                </td>
+                                <td>
+                                    775.42
+                                </td>
+                                <td>
+                                    860,899
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/18/2016
+                                </td>
+                                <td>
+                                    780.01
+                                </td>
+                                <td>
+                                    782.86
+                                </td>
+                                <td>
+                                    777
+                                </td>
+                                <td>
+                                    777.5
+                                </td>
+                                <td>
+                                    718,882
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/17/2016
+                                </td>
+                                <td>
+                                    777.32
+                                </td>
+                                <td>
+                                    780.81
+                                </td>
+                                <td>
+                                    773.53
+                                </td>
+                                <td>
+                                    779.91
+                                </td>
+                                <td>
+                                    921,666
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/16/2016
+                                </td>
+                                <td>
+                                    780.3
+                                </td>
+                                <td>
+                                    780.98
+                                </td>
+                                <td>
+                                    773.444
+                                </td>
+                                <td>
+                                    777.14
+                                </td>
+                                <td>
+                                    1,027,836
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/15/2016
+                                </td>
+                                <td>
+                                    783.75
+                                </td>
+                                <td>
+                                    787.49
+                                </td>
+                                <td>
+                                    780.11
+                                </td>
+                                <td>
+                                    782.44
+                                </td>
+                                <td>
+                                    938,183
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/12/2016
+                                </td>
+                                <td>
+                                    781.5
+                                </td>
+                                <td>
+                                    783.395
+                                </td>
+                                <td>
+                                    780.4
+                                </td>
+                                <td>
+                                    783.22
+                                </td>
+                                <td>
+                                    739,761
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/11/2016
+                                </td>
+                                <td>
+                                    785
+                                </td>
+                                <td>
+                                    789.75
+                                </td>
+                                <td>
+                                    782.97
+                                </td>
+                                <td>
+                                    784.85
+                                </td>
+                                <td>
+                                    971,742
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/10/2016
+                                </td>
+                                <td>
+                                    783.75
+                                </td>
+                                <td>
+                                    786.8123
+                                </td>
+                                <td>
+                                    782.778
+                                </td>
+                                <td>
+                                    784.68
+                                </td>
+                                <td>
+                                    784,559
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/09/2016
+                                </td>
+                                <td>
+                                    781.1
+                                </td>
+                                <td>
+                                    788.94
+                                </td>
+                                <td>
+                                    780.57
+                                </td>
+                                <td>
+                                    784.26
+                                </td>
+                                <td>
+                                    1,318,457
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/08/2016
+                                </td>
+                                <td>
+                                    782
+                                </td>
+                                <td>
+                                    782.63
+                                </td>
+                                <td>
+                                    778.091
+                                </td>
+                                <td>
+                                    781.76
+                                </td>
+                                <td>
+                                    1,106,693
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/05/2016
+                                </td>
+                                <td>
+                                    773.78
+                                </td>
+                                <td>
+                                    783.04
+                                </td>
+                                <td>
+                                    772.34
+                                </td>
+                                <td>
+                                    782.22
+                                </td>
+                                <td>
+                                    1,799,478
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/04/2016
+                                </td>
+                                <td>
+                                    772.22
+                                </td>
+                                <td>
+                                    774.07
+                                </td>
+                                <td>
+                                    768.795
+                                </td>
+                                <td>
+                                    771.61
+                                </td>
+                                <td>
+                                    1,139,972
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/03/2016
+                                </td>
+                                <td>
+                                    767.18
+                                </td>
+                                <td>
+                                    773.21
+                                </td>
+                                <td>
+                                    766.82
+                                </td>
+                                <td>
+                                    773.18
+                                </td>
+                                <td>
+                                    1,283,186
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/02/2016
+                                </td>
+                                <td>
+                                    768.69
+                                </td>
+                                <td>
+                                    775.84
+                                </td>
+                                <td>
+                                    767.85
+                                </td>
+                                <td>
+                                    771.07
+                                </td>
+                                <td>
+                                    1,782,822
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    08/01/2016
+                                </td>
+                                <td>
+                                    761.09
+                                </td>
+                                <td>
+                                    780.43
+                                </td>
+                                <td>
+                                    761.09
+                                </td>
+                                <td>
+                                    772.88
+                                </td>
+                                <td>
+                                    2,697,699
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    07/29/2016
+                                </td>
+                                <td>
+                                    772.71
+                                </td>
+                                <td>
+                                    778.55
+                                </td>
+                                <td>
+                                    766.77
+                                </td>
+                                <td>
+                                    768.79
+                                </td>
+                                <td>
+                                    3,830,103
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    07/28/2016
+                                </td>
+                                <td>
+                                    747.04
+                                </td>
+                                <td>
+                                    748.65
+                                </td>
+                                <td>
+                                    739.3
+                                </td>
+                                <td>
+                                    745.91
+                                </td>
+                                <td>
+                                    3,473,040
+                                </td>
+                            </tr>
+                        
+                </tbody>
+            </table>
+        
+</div>
+    </div>
+    <!-- end genTable-->
+    <div class="floatR TalignR marginT10px">
+        <small>*This data reflects the latest intra-day delayed pricing.</small>
+        <div class="clearB padding5px"></div>
+        <a href="javascript:getQuotes(true);">
+            <img src="http://secfilings.nasdaq.com/images/view_xls.gif" alt="Download Excel icon" title="Download and view the tables contained in this filing in Microsoft&reg; Excel." class="ValignM" />
+        </a>
+        <span class="fontS14px">
+            <a id="lnkDownLoad" href="javascript:getQuotes(true);">
+                Download this file in Excel Format
+            </a>
+        </span>
+    </div>
+	<div class="clearB"></div>
+
+    <form method="post" action="http://www.nasdaq.com/symbol/goog/historical" id="getFile">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="Nckur817hjBNCuzE8TWw8pnTykPLvt3LpIm/MCn3br8roA5kAZQguvqRvrzHAiLd6v71CibBH4LGPnbikQYh0A5drpFQvaO65eujIM+e18puHG6K8A75R1sRtretnQk6abvzt1RcIeh74dsvNmFv/GBkKyVpYS6gDf09xfyOrlTUzu/W7K4jja/3WX3Rb2Fze5sgOgsfGGykwwjWxirFYUXT7Te+PEF8IqoRAaIfw2ynXButR5tD1JZ0m1MyvjQ9beEfM5Bc/mkI05nXxHzIC7sOulCqgC7uSbYQBoe/zOhMHC8FUv8mZwNDy8m09p7niAF8W0ECr2GZagXkz1YIe37aX3+6e+ncS/x/AcvxZgdVb1bWqqifGxl7mX2LgHTZwj/m1iVKFd5JJNxcwx4RBVxRkELfHXLbncj1pvOuM5ACLjIydmDn//LvPD5DYzHt0KISq+m/35euDClzizvRcCHzhCLWIqwKxcYcWb364nAY0/7VF+Npufu3dMFQOdhXYDvQNQ+erH+hJwu5YvTFqsG7biFJMuqSTHq+LWLNqxZNZwyzjTI4frB8pO8++v6L+1DR5cqlvZgHG2nYhAurJAx5kEabxsdhyWQhNvNEccWZ6A7Y/7I3+XkNiEaIOKFVdudY17aPwhdCpMBWzRGN2bWti7sDZ6OAj2tTPwybeTuDtL8ZuGEbI5xRMv8t0M9pozHA7LrIk1HzAoygQUt3El4OcnckKiDY3DgdR/pJQ+vfLUDmrtd6PVW44kAdg7szG4Bc/4WSuxCKyPuT26sdCxynzCv98HxOWrMnoSCpLNzuBgfPjV7MW7iCreYhiyu8JeARDQvySu/Bg/GEEaO6UYPDQAJoPZtNr6h5JbROaf1uHPkRQfTkSdklvbGjMkMsqZg7OJwHFaRhtguSzYpDo2FBx+zpCki9+Ws2zeSd8E9KYN224ssCtUPmnGJBI2/9HlFcBnufkEhCJuGUctgUBeodnp2BFD9rC3OURoxy3Gp0rzrqyGo6B1KJ7WjZ3b1KKDN/MPlAO/lzodbW7DGZVocOfjQu5dOvpt1nSi2+SjhxXOLxB2Bc3Ax7HU5D9uVTp5OCzTBFwkf/Uk+Bo/zaFk30fBI4iFG+C8ZEz+ZlFqqxM02xwLMja4x/6YhwXEUT4f6wx0YzksDOMD8KwxuWgcSccqMx6nV8ddCw0TV/Hea4UkEa3nXQrrtgQTBS5l98KMPgWjNusoHfF/gNRHFb55SFRhPSWCtyiInzGCWtRc2/bxy6NTnqbJnl6pctbWq7HObwzU8YxX3t12A5pEws5NqeVsrwJR7RyQNACoE4dZ1VLnsz06BRlI3mJu6HjiUCLQb3/MKNESm9DXN9Da7C3qfAxDYswWNVuIjW4G2X35MTWPADzQkqQ6AHnFARMVCl+cGtdokociZj1/t8eUV1xtqmhjEKuB2eFOEDKvCB9NzPblIyuKqbnhdOd95mFQ3Qg+vygswqRxOiAxmWZTiKGJaJS4ccWy1fq9eU/TyZCYjViYx3Clp+Nm81VqlkXMJNPJTfuIWi2X2zNEb3wyQP09mSVPwaHmvcf0XKWvLp0CJqKaB4MKfdDxvKfS3OMFtsngR7/DPHZwEQPqAQ9d7q5UaatMA2VqMc1EQ0okDZ1UoU39W6KpvFZy5RZbxHowZFxgomsdD/peYT3idNcC2RLXk8USTtnoSmABVq5uhxmx+qMSJi6LQMIYpGuuLxxWIgtNvDAF3Eu5S3QLe5i0fChNl0hibGhy/843NiXCAlz1VxktO9cYF2fQKEF1unf3vD0BKB8rExPPxTcxQ1Ll/zLRDO/eq3iQwYUKvKHnKED1HBWgH0rvCqs18gGtVfAsXgdHc75YnA04pQC1jhgdYnAVBbm0fkmoR5w5VcXOSicMftMtaUwlDIVxhjcZO4QH5IQ+4gxdhqfMmvb+RPHyUeKn5edH086HzjQ6qQz2Crvd2m7n9mb+dKlyq6gJ6LTP1GEWpVT52rA/681YBwgiwGvHFRy2CXeRcT0pTjJNMYNBLdgL6pQjhUksLibNWNlHe/bu6utoeoyWreHPOWUavqakMAu4TCcka1G0VXxV8u0osS0R9XKaJYbZpfGuXRXzZ237CpRPnlL+elLsTMZKnaC2IDQs09VhJaFrnG5pl2iEvKQuf95zL+odB1IvwcbRlCW+o9hxkkpZIVjJo9TUcv+4SrzlrsxBjX0wutGZtjC8sPzqjKto14QecVEIafhqdUf6GbcRFghyjXoKcPunB/7pKRgZPoK/5nckNHyImv3X7wAG9OUPFG33RTe+88ciAlA40bNBlItiOTF64f305w7nb0XxqTirzr0W2d0Uk0Fq7OVFM0d+nFVFrQ4nxjLV+5zOwEzBpLvgHQvxydjmmQy1jUteAoRn7a6ViFUAwEpzjrZb/prbAv2CmvbK4t6PwLWA3d9CRDngfWg4YzpUPvx0y1CxoWvwFyL3mhUgqjUrWOFKIBqSd8u62RSU0OqaS+SbBYws82A0UjygYIo/SbWXwFrIpbFQC4vrWvjzVgd2/boWq2bWugtvDouZpq/gvI5c4PKz3AuucBaFIrdiFqjIZ4AHKWCqHpgO2HeJ0Cy9LIhhyfk69kdnMqHCjyT1LYIbCkuTVCTeLGwz7eZb3Pe5DTLYedUDj4u+zR41GveC1egBXWvNlnTUIc+D4Nf+mloTqyTfcLlgaH+MRSscOXGaVg4O7FfB7avpId6JZRa9tXWcjWxkC+To5WQjhJ8dVA39zufLBDNDcWQco3i01RQjKLbJWkJf+7QM8r0bY6ChtumfChTZm2iKNtKgAcS3lD/bBuGpmZayFQUYrKpDsRTa44xxxsGlqULY/ZdY2JyFT5CY9CVHe+2KCrP2AHBcEUf1WmbGAcyO4zKn2SETuOLE9G9OzVWGOwyZmUrcHCWoHK9JwQaedDEV9fvHZ77mTdxSdCiV11Oq8MWQpZzc+V1npU0/qAVSKnTaaFFCzoCjxTzIbycDSPErJzkIeQnWy+TwvD080F69fR1yNJKKaTcFHFifXKdXUrBUgJeccQgOKQyt7FAuwgei+jaWXurPw9ox3Muf8X5oSAj04cgIlhkSNJXj4h4ptctgeg3BP4g+8BU22mm0f5FPKNslJbLllqWZr6jDDw3c6aGgSSNA4789RnQ4Uv+YDKvhu4gG3qatbegxayjTYtoN6ND4ypvx47qLS2KV6luqZBFJxxReEisdoAXrZxrZ2BJsjnKZ0grqq+YfJ6rlCZdO602DcEq/tCp+huUydBKykQuRcSsfk3w9hZCS33NmLEYiD058ZQhzEVOBi1aVCENOvJrL2GCdjWwJCaq7ulzGd6tLd7cpzHOXDU521UvhCalvCGErdHz02z1hnG0txqI1x+qKmm2uIADlEdcexiTbBrQtEhIL4amHSCvbVS14ZHf/GvPMRlZQ1tnKidoGpKXRxsy+5tr3MyBwMUSSFJpO/BRwwndzbn8OBShs7FYBmG7tcAmZm4HJbADidJ6pFFo+Klk4XBiBpo/V+X/F54UZQNsVhVipLcTYsHVqhP3PJVW3sJBmvVw2832rCTxkI8pB09KgjcrAwiDRXmAfCB6w2vWt1e7iNiPqq92yB4DjPhbeg08AoUKf3N5e6CQ4dx//St+kuN3ArJWmtSr/E4VQVHhWjS5RAx/Er5CjBpvEA1afYYHonqprb+/rsjf3rd+xdODu3hjBtoiDnywivgvLo+9M4kbvDj6Sq0xtGnWyni7Lu4I7OSgida+QOHNiLqQjj87d70okEnW6esXIr4FgdANVGR0QQrVFwUUhurYKebMFTCoP+NaAJm+TT7MYmJZ6QzYAVl5ZEOyZt1cJcg6VES/v78s4yH14Nq3+JRtletN9w3FjLVPaTxAhxn2WQNbOBCMn2dV6tX6BK1vOKp0gTck8JNRSUuIlP3dTscaPZcNAAtrfIPmpBmwk+n+syn6v8IodX3g+jPfETgcsTwqF+/4o+80rRwcfDf+ARuoRTHZkFZ41PW70Lua+tp1pqTqVFJi0v9fyofN8EP8FhaDYlHm9XWUZLPvluvnyo186VXTxo0NcW5D0mK3Q6762fImRliInUTU3sFrZPzKSNFSG539LxrVsVUPf0zH7rwmkDVeahJKyTHdCE5FizSxGwo51ClbxsvLscLo8naYT+NsfugIpeFOwknseUE4VL2KvvAWqoXLX6AH/U3dJBF9prAvBUhVHFP80L2k/E4ZeoqxKpvln8TRgbsUOm7rcuiiwy6KPTMomN0NoFdz+nrXMVynzHw5B9zhbxg04vWNqs/g3nTqD2QU/KpXC/sR6Q7qtw6d17Lg4B34IsTy9ZDNPgB7HYpolkT2lxY8IjiInU5uGJ5uHEpUMCYpMLsGPPIPmImreu6lYlC/ZYUNBfXMgSuhA3MQS+nDEkaIabUsO5q31vYcrByYexsgzFSqkgxPdlS+T4k+GWpv6rR6m++rRike9+CThonnGntyXSJ2PcSi6skNTW9GDxzNiudRXQbDlW7FIN0Jse0KlYn8eyWngRzavKplB2+x7ql88QvB6q1C5UjdLsOLMquxHzXstnaxNS1t14fWaCg63g/YhOYS4AR6+FXKQIhAMXPmHO1GQeLVhbuBEb7gVv0xOf9x44DInXuZJuultY7ypTH9DQEsWbvUbwl5DTHsphN2kuUEqE+KA637trZfHsUIqJn1QoJpQtctlnFhFcR2QO20JGoEzDwZVvvHADJvRgpl2hYohlMvOekff9vkdhkVOszS51jiuov0HLMF5EYad0NIRhqYmFOywk5HOSGtz0qnwhxhc+sv8j4cG29mzKCDHtUxGRXy1MoomxdqoLyFYfgaEnpwVfWojtbHYddCHX32syjlB8QeeBH/XWTQwM2b06UCeACQUhRO1P1DH/hZMDNf2EpLRKh3B/+FVZD4f8z5BJhONfr4PiX1wCukxdAPxcfWOxDaWGpp3LtiH5ckS6zyD+2axXWdqJCuSY2rmWbWN3sXqqRaJVj46WDOCzV9Y8KqAR9MAEvEv/Fo6nr/pCdCIavLxToaga2wCYGq2o3nrE4wY/dXEs0g2ohknkvItaUM/sHkxfRC6WwZqt4p4FvP7THQpAUSrGWWWtmFeCdwGuhTgGwF19IpeM8XXwDjTr/OLtvOHbZTBzSaaPZgc14zyWDHGYVpLg1JEYcuPyAZPKEfk2GUtSTWVU2XeiLJCJ4du0LTDbI/9F4P3eB2/o/SpsJBGX0qAi3YTJPl6ei6W/xbeZZC776wt2PJUnAETZHE8fuWHGNiP8JAGAhWF5BZ0NNpFooS/icJaELZJ7yHZDSwmhg4b2bblXMNkxKiOPe7JRtTbNMhdSY8wB+uGLvRWFJY8lcmSU4urh7zklpcv5V8QVKX1Goe0/huGss31ldtNLE6gisa/RmCkmUk6D7BKyX1oB17IThoP2FUZTrDPV6l8iCha+5wX3+LNXVNHN4OVqPdYwT95PjGQETGnUTOdxhp6CMhOxb/OMr6ceAmgY4VTc/0gCtboiiw9yzZIoVRa2EFgb9BbQ+CQpImWIotQTOaXJ0NYI1FYkNh2vWn2rRJtKiFX+vE/e3DRNtSvkQrR+Ez5EetxXMXRi74Rkj+KzZUgLimR7dsxZX6IDb5ne2lzJFhQnuqZw+/ynyOGl2cGMiVEl96yIuH5qZ3MjYZsI4sUqVS41U3ilFAw87sHWs7we6ke+3eW0XdsMz19Jjs+oBCZcsyLb/nFCjo6s=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="87BE3BDB" />
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="uuF7QZzFT3jIEZKzXYbZobHgwvccTJwRrUsimHHdqCfzMD9sETkfuH7Wfn7vrMV82AELbrSFrdLLG/YJB3orxkaiwkOfoWOmM29gZ8qQCYm3I8+hl2twLhdPey+uofFY" />
+        <input type="hidden" name="ctl00$quotes_content_left$submitString" id="quotes_content_left_submitString" />
+    </form>
+
+	
+<!-- *********************************************** END left-column **********************************************-->
+			</div><!--end left-column-div-->
+			
+			<div id="right-column-div">
+<!-- *********************************************** START Right-column **********************************************-->
+
+<script type="text/javascript">makeAd('', '300x250, 300x600', is_dartSite, is_dartZone, '', '');</script>
+
+<div class="clearB"></div>
+<br />
+
+<!--******* Start ~/investing/online-brokers/rightside-brokerlink.inc ******** -->
+
+<script>
+if(adRotatorRandom(50))
+	addStyle('dynamic','#online-broker-center-header,#online-broker-center-box{display:none;}');
+else
+	addStyle('dynamic','#forex-broker-center-header,#forex-broker-center-box{display:none;}');
+</script>
+
+<div id="online-broker-center-box" class="TalignC marginB10px">
+	<h3>Research Brokers before you trade</h3>
+</div>
+<div id="online-broker-center-box" class="marginL25px paddingL15px">
+	<a href="http://www.nasdaq.com/investing/online-brokers/" class="blue-button marginL25px" onclick="triggerAsyncOmnitureClickEvent('module:onlinebrokercenter:quotes-button')">
+		Compare Online Brokers
+	</a>
+</div>
+<div class="TalignC" id="forex-broker-center-header">
+	<h2>Want to trade FX?</h2>
+</div>
+<div id="forex-broker-center-box" class="marginL25px">
+	<a href="http://www.nasdaq.com/investing/forex/forex-brokers.aspx" class="blue-button marginL25px" onclick="triggerAsyncOmnitureClickEvent('module:forexbrokercenter:quotes-button')">
+		Visit our Forex Broker Center&nbsp;
+	</a>
+</div>
+
+<!--******* END ~/investing/online-brokers/rightside-brokerlink.inc ********** -->
+
+<div class="clearB"></div>
+<br />
+
+<div id="sticky-container">
+	<script type="text/javascript">makeAd('', '160x600', 'btf', is_dartZone, '', '');</script>
+</div>
+
+<div class="clearB"></div>
+<br />
+
+<!-- BEGIN includes/ad-quotes-300.inc -->
+<!--
+<div class="clearB"></div>
+<br />
+<script type="text/javascript" language="JavaScript">
+	//makeAd('3', '300x200', 'mktsnews', 'Dianomi', '', '');
+</script>
+-->
+<!-- END includes/ad-quotes-300.inc -->
+
+<div class="clearB"></div>
+<br />
+
+
+<!-- *********************************************** END Right-column **********************************************-->
+			</div><!--end right-column-div-->
+	
+	<script type="text/javascript">defineABHC('end');</script>
+	</div><!-- end content -->
+
+	  <!-- START Google Ads includes/footer_googAd.inc-->
+  
+  <div class="clearB"></div>
+  <br /><br />
+  
+  <div class="footer_googAd marginLAuto marginRAuto" style="width:728px;">
+    <script type="text/javascript" language="javascript">
+		google_ad_client = "pub-1861191755926748";
+		google_ad_width = 728;
+		google_ad_height = 90;
+		google_ad_region= "test";//allow for more than 3 google ads
+		googleSetFooterAdSlotAndHints();//set ad slot and hints fields
+	</script>
+	<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+
+
+
+
+  </div>
+
+  <!-- END Google Ads includes/footer_googAd.inc-->
+
+
+		<div id="back-to-top" title="Scroll back to top" onclick="triggerAsyncOmnitureClickEvent('master:global-object:back-to-top')"><span></span></div>
+	</div><!--end wrap-->
+
+<!-- begin includes/fixedFooter.inc-->
+<!--// begin footer -->
+<footer class="site__footer">
+	<div class="site__footer--primary">
+		<div class="wrapper">
+			<a href="http://www.nasdaq.com/" class="logo">
+				<div></div>
+			</a>
+			<div class="floatR">
+				<a href="https://www.facebook.com/NASDAQ" class="icon icon-facebook">
+					<span></span>
+				</a>
+				<a href="https://twitter.com/nasdaq" class="icon icon-twitter">
+					<span></span>
+				</a>
+				<a href="https://plus.google.com/+nasdaq" class="icon icon-google-plus">
+					<span></span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="site__footer--secondary">
+		<div class="wrapper">
+			<nav class="site__footer__nav">
+				<ul>
+					<li><a href="http://www.nasdaq.com/" title="Nasdaq"><strong>NASDAQ.com</strong></a></li>
+					<li><a href="http://www.nasdaq.com/quotes/company-news.aspx" title="Company News">Company News</a><span>&#47;</span></li>
+					<li><a href="http://www.nasdaq.com/services/annual-reports.aspx" title="Annual Report">Annual Report</a><span>&#47;</span></li>
+					<li><a href="http://www.nasdaq.com/help/contact-information.aspx" title="Contact">Contact</a><span>&#47;</span></li>
+          <li><a href="http://business.nasdaq.com/discover/careers/index.html" title="Careers">Careers</a><span>&#47;</span></li>
+					<li><a href="http://www.nasdaq.com/help/nasdaq-advertising.aspx" title="Advertise on Nasdaq.com">Advertise on Nasdaq.com</a></li>
+				</ul>
+				<ul class="lighter">
+					<li><a href="http://www.nasdaq.com/about/terms.aspx" title="Terms of Use">Terms of Use</a><span>&#47;</span></li>
+					<li><a href="http://www.nasdaq.com/sitespecific/privacy.aspx" title="Privacy Policy">Privacy Policy</a><span>&#47;</span></li>
+					<li><a href="http://www.nasdaq.com/help/sitemap.aspx" title="Sitemap">Sitemap</a><span>&#47;</span></li>
+					<li><a href="http://www.nasdaq.com/investing/glossary/" title="Glossary">Glossary</a><span>&#47;</span></li>
+					<li><a href="http://www.nasdaq.com/feedback/" title="General Feedback">General Feedback</a><span>&#47;</span></li>
+					<li>
+						<!--*************************OpinionLab Begin*****************-->
+						<script language="javascript" type="text/javascript" src="http://www.nasdaq.com/services/onlineopinionS3tS/oo_engine.js"></script>
+						<script language="javascript" type="text/javascript">
+						O_GoT('<span></span>Feedback');
+						</script>
+						<!--*************************OpinionLab End*****************-->
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</footer>
+<!--// end footer -->
+<!-- begin lightbox backdrop -->
+<table class="backdrop" id="backdrop">
+	<tr>
+		<td>
+			<!-- begin lightboxness -->
+			<div class="lightbox edit-stocks" id="edit-stocks">
+				<!-- close button-->
+				<span class="close">CLOSE<span class="x">X</span></span>
+				<div class="floatL">
+					<h2><center>Edit Favorites</center></h2>
+					<!-- text -->
+					<p>Enter up to 25 symbols separated by commas or spaces in the text box below. These symbols will be available during your session for use on applicable pages.</p>
+					<!-- input box -->
+					<div class="floatL">
+						<textarea onkeypress="if(event.keyCode ==13){nasdaqIndexRow.myListGo()}else if(event.keyCode == 27){$('.close').click();}" id="myListInput" name="myListInput" cols="35" rows="3" class="fontS14px"></textarea>
+					</div>
+					<!-- right side controls -->
+					<div class="floatL marginL10px">
+						<a href="javascript:void(0)" class="lightgreen-button marginB5px TalignC" onclick="nasdaqIndexRow.myListGo();">Update</a>
+						<br />
+						<a href="javascript:void(0)" class="red-button" onclick="nasdaqIndexRow.clearMyList();">Clear List</a>
+					</div>
+				</div>
+			</div>
+			<!-- end lightboxness -->
+			<!-- begin lightboxness -->
+			<div class="lightbox stock-searches" id="stock-searches">
+				<!-- close button-->
+				<span class="close">CLOSE<span class="x">X</span></span>
+				<h2>Customize your NASDAQ.com experience</h2>
+				<b>Background Color Selector</b>
+				<br />
+				<span>Select the background color of your choice:</span>
+				<div class="clearB"></div>
+				<div id="BgSelector">
+					<div>
+						<div class="BgSelector-1">
+							<div class="floatL">
+								<input type="radio" name="themepreference" value="blackg" onclick="updateSiteTheme(this.value)">&nbsp;Black
+							</div>
+							<div class="BgSelector-color"></div>
+						</div>
+						<div class="clearB"></div>
+						<div class="BgSelector-2">
+							<div class="floatL">
+								<input type="radio" name="themepreference" value="slateg" onclick="updateSiteTheme(this.value)">&nbsp;Slate Gray
+							</div>
+							<div class="BgSelector-color"></div>
+						</div>
+					</div>
+					<div>
+						<div class="BgSelector-3">
+							<div class="floatL">
+								<input type="radio" name="themepreference" value="lightg" onclick="updateSiteTheme(this.value)">&nbsp;Light Gray
+							</div>
+							<div class="BgSelector-color"></div>
+						</div>
+						<div class="clearB"></div>
+						<div class="BgSelector-4">
+							<div class="floatL">
+								<input type="radio" name="themepreference" value="grayb" onclick="updateSiteTheme(this.value)">&nbsp;Gray Blue
+							</div>
+							<div class="BgSelector-color"></div>
+						</div>
+					</div>
+				</div>
+				<div class="clearB"></div>
+				<hr /><br />
+				<b>Quote Search</b>
+				<br />
+				<span>Select a default target page for your quote search:</span>
+				<div id="QuoteSetting">
+					<div>
+						<input type="radio" name="quotepreference" value="realtime" onclick="Nasdaq_Quotesearch.confirmUserPref(this.value)">
+						&nbsp;Real-Time<br />
+						<input type="radio" name="quotepreference" value="afthours" onclick="Nasdaq_Quotesearch.confirmUserPref(this.value)">
+						&nbsp;After Hours<br />
+						<input type="radio" name="quotepreference" value="premkt" onclick="Nasdaq_Quotesearch.confirmUserPref(this.value)">
+						&nbsp;Pre-Market<br />
+						<input type="radio" name="quotepreference" value="compnews" onclick="Nasdaq_Quotesearch.confirmUserPref(this.value)">&nbsp;News
+					</div>
+					<div>
+						<input type="radio" name="quotepreference" value="flash" onclick="Nasdaq_Quotesearch.confirmUserPref(this.value)">
+						&nbsp;Flash Quote<br />
+						<input type="radio" name="quotepreference" value="summary" onclick="Nasdaq_Quotesearch.confirmUserPref(this.value)">
+						&nbsp;Summary Quote<br />
+						<input type="radio" name="quotepreference" value="dyncharts" onclick="Nasdaq_Quotesearch.confirmUserPref(this.value)">
+						&nbsp;Interactive Charts<br />
+						<input type="radio" name="quotepreference" value="default" onclick="Nasdaq_Quotesearch.confirmUserPref(this.value)">
+						&nbsp;Default Setting<br />
+					</div>
+				</div>
+				<div class="clearB"></div>
+				<span>
+					Please note that once you make your selection, it will apply to all future visits to NASDAQ.com.
+					If, at any time, you are interested in reverting to our default settings, please select Default Setting above.
+					<br /><br />
+					If you have any questions or encounter any issues in changing your default settings, please email <a href="mailto:isfeedback@nasdaq.com?Subject=Default%20Settings%20Inquiry">isfeedback@nasdaq.com</a>.
+				</span>
+			</div>
+			<!-- end lightboxness -->
+			<!-- begin lightboxness -->
+			<div class="lightbox" id="confirm">
+				<!-- close button-->
+				<span class="close">CLOSE<span class="x">X</span></span>
+				<h4>Please confirm your selection:</h4>
+				<p>
+					You have selected to change your default setting for the Quote Search. This will now be your default target page;
+					unless you change your configuration again, or you delete your
+					cookies. <b>Are you sure you want to change your settings?</b>
+				</p>
+				<div>
+					<button class="floatL"  onclick="Nasdaq_Quotesearch.confirmHandler('defaultQuote', true)">YES</button>
+					<button class="floatR"  onclick="Nasdaq_Quotesearch.confirmHandler('defaultQuote', false)">NO</button>
+				</div>
+			</div>
+			<!-- end lightboxness -->
+		</td>
+	</tr>
+</table>
+<!-- end lightbox backdrop -->
+<table class="backdrop" id="globalCustomModal">
+	<tr>
+		<td>
+            <!-- begin lightboxness -->
+            <div class="lightbox" id="adBlockMsg">
+				<!-- close button-->
+				<span class="close" onclick="close_global_modal()">CLOSE<span class="x">X</span></span>
+				<h2><center>We have a favor to ask</center></h2>
+				<!-- text -->
+				<p id="adBlockMsgText">Please disable your ad blocker (or <a href="http://www.nasdaq.com/help/adblock-instructions.aspx">update your settings</a> to ensure that javascript and cookies are enabled), so that we can continue to provide you with the first-rate market news and data you've come to expect from us.</p>
+			</div>
+            <!-- end lightboxness -->
+         </td>
+	</tr>
+</table>
+
+<!-- Omniture code -->
+
+<!--********************BEGIN  ../includes/omniture.inc***********************-->
+
+<!-- SiteCatalyst code version: H.1.
+Copyright 1997-2005 Omniture, Inc. More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="http://www.nasdaq.com/includes/s_code-072016v1.js?v=03012016"></script>
+
+
+<script type="text/javascript" language="JavaScript">
+
+<!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script>
+
+<noscript><img
+src="http://nasdaq.122.2O7.net/b/ss/nasdaqprod/1/H.1--NS/0"
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.1. -->
+<!-- setSectionName() moved to js file: masthead_default.js -->
+
+
+<!--*********************End  ../includes/omniture.inc*******************************-->
+
+
+<script type="text/javascript">
+//<![CDATA[
+setSectionName(propVar);
+//]]>
+</script>
+
+<!-- Begin Tynt-->
+<script type="text/javascript">
+if(document.location.protocol=='http:'){
+var Tynt=Tynt||[];Tynt.push('apOVCYiV0r35wBadbiUzgI');
+(function(){var s=document.createElement('script');s.async="async";s.type="text/javascript";s.src='http://tcr.tynt.com/ti.js';var h=document.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})();
+}
+</script>
+<!-- End Tynt-->
+
+<!-- tapad tracking pixel -->
+<img src='http://tapestry.tapad.com/tapestry/1?ta_partner_id=965&ta_add_audiences=["367193"]&ta_format=png' width="1px" height="1px" />
+
+<!-- ideamelt resources -->
+<script>
+addScript(ideameltJS,true,"initIMApps()");
+</script>
+
+<!-- DataPoint Media tracking pixel -->
+<script>
+(function() {
+var d=document,h=d.getElementsByTagName('head')[0],s=d.createElement('script'),sc = 'https:' == document.location.protocol ? 'https://' : 'http://';
+s.type='text/javascript';
+s.async=true;
+s.src=sc+'s.dpmsrv.com/dpm_58f0744907ea8bd8e0f51e568f1536289ceb40a5.min.js';
+h.appendChild(s);
+})();
+</script>
+
+<!-- Begin BlueKai Tag --> 
+<iframe name="__bkframe" height="0" width="0" frameborder="0" style="display:none;position:absolute;clip:rect(0px 0px 0px 0px)" src="about:blank"></iframe> 
+<script type="text/javascript" src="http://tags.bkrtx.com/js/bk-coretag.js"></script> 
+<script type="text/javascript">
+
+bk_addPageCtx('is_dartSite', (typeof(is_dartSite)!=='undefined')?is_dartSite:'');
+bk_addPageCtx('is_dartZone', (typeof(is_dartZone)!=='undefined')?is_dartZone:'');
+bk_addPageCtx('propVar', (typeof(propVar)!=='undefined')?propVar:'');
+bk_addPageCtx('propVar15', (typeof(propVar15)!=='undefined')?propVar15:'');
+bk_addPageCtx('SymbolType', (typeof(SymbolType)!=='undefined')?SymbolType:'');
+bk_addPageCtx('StockIndustry', (typeof(StockIndustry)!=='undefined')?StockIndustry:'');
+bk_addPageCtx('ArticlePrimaryCategory', (typeof(ArticlePrimaryCategory)!=='undefined')?ArticlePrimaryCategory:'');
+ 
+bk_doJSTag(31843, 1); 
+</script> 
+<!-- End BlueKai Tag -->
+<!-- Foresee  -->
+<script type="text/javascript" async src="http://www.nasdaq.com/includes/foresee/foresee-trigger.js"></script>
+
+<!--  Quantcast Tag -->
+<script>
+
+ var ezt = ezt ||[];
+
+ (function(){
+   var elem = document.createElement('script');
+   elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://pixel") + ".quantserve.com/aquant.js?a=p-kGNZ2CXTUFYyw";
+   elem.async = true;
+   elem.type = "text/javascript";
+   var scpt = document.getElementsByTagName('script')[0];
+   scpt.parentNode.insertBefore(elem,scpt);
+ }());
+
+
+(function(){
+   var label;
+   if(typeof propVar3=='undefined')
+ 		propVar3 = "";
+   if(typeof propVar15=='undefined')
+ 		propVar15 = "";
+   if(typeof propVar=='undefined')
+		propVar = "";
+   label = 'Author.'+propVar3+',Category.'+propVar15+'.'+propVar;
+ ezt.push({qacct: 'p-kGNZ2CXTUFYyw',
+	   uid: '', 
+	   labels:label
+           });
+}());
+
+</script>
+<noscript>
+  <img src="//pixel.quantserve.com/pixel/p-kGNZ2CXTUFYyw.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- End Quantcast Tag -->
+
+<!-- begin Enerprise Florida survey -->
+<script>
+(function(){
+if(document.referrer=="http://www"+host_Extension+".nasdaq.com/markets/ipos/" 
+	&& document.location.href!="http://www"+host_Extension+".nasdaq.com/markets/ipos/"
+	&& get_cookie_value("EnterpriseFloridaSurvey")==false)
+{
+	set_cookie_value("EnterpriseFloridaSurvey","true",3);
+	(function(e,t,c,n){var o,s,a;e.SMCX=e.SMCX||[],t.getElementById(n)||(o=t.getElementsByTagName(c),s=o[o.length-1],a=t.createElement(c),a.type="text/javascript",a.async=!0,a.id=n,a.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/hUTajQEUDRakFLAvep7SKYXccnvCbZ0srowJz0bd5J222Zkgw6IfSaTGI6f5QilZ.js"].join(""),s.parentNode.insertBefore(a,s))})(window,document,"script","smcx-sdk");
+}
+else if(document.location.href=="http://www"+host_Extension+".nasdaq.com/markets/gold.aspx"
+	&& get_cookie_value("EnterpriseFloridaSurvey")==false)
+{
+	set_cookie_value("EnterpriseFloridaSurvey","true",7);
+	(function(t,e,n,o){var s,c,i;t.SMCX=t.SMCX||[],e.getElementById(o)||(s=e.getElementsByTagName(n),c=s[s.length-1],i=e.createElement(n),i.type="text/javascript",i.async=!0,i.id=o,i.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/Wjf3gt0ApTZxI1vrvK7FsvlAnveL2P68ydUzBYKawiMXPToZEpJ5x3_2Bw85ZtPVDJ.js"].join(""),c.parentNode.insertBefore(i,c))})(window,document,"script","smcx-sdk");
+}
+})();
+</script>
+<!-- end Enterprise Florida survey -->
+
+
+<!-- end includes/fixedFooter.inc-->
+
+<!-- START page bottom script -->
+<script type="text/javascript">
+    var baseUrl = document.location.href;
+    $("[id$='submitString']").val('');
+
+    function getQuotes(download) {
+        if (!download)
+            showLoadingSpinner();
+
+        var data = $("[id$='ddlTimeFrame']").val();
+        var submitString = data + '|' + download + "|" + quoteBoxSelectedSymbol; if (!download) {
+            $.ajax({
+                type: "POST",
+                url: baseUrl,
+                data: submitString,
+                contentType: "application/json",
+                success: function (response) {
+                    $("[id$='historicalContainer']").html(response);
+                    $(".genTable tbody tr:odd").addClass("genTablealt");
+                    hideLoadingSpinner();
+                }
+            });
+        }
+        else {
+            $("[id$='submitString']").val(submitString);
+            $("#getFile").submit();
+        }
+    }
+
+    function showLoadingSpinner() {
+        //show loading image
+        $('#ajaxloader').css({ display: "block" });
+        //do fade and ajax call
+        $('#historicalContainer').fadeTo(0, 0.5);
+    }
+
+    function hideLoadingSpinner() {
+        //hide loading image
+        $('#ajaxloader').css({ display: "none" });
+        //undo fade
+        $('#historicalContainer').fadeTo(0, 1);
+    }
+</script>
+<script type="text/javascript">
+    var tooltiptimer = "";
+    function showDelayedToolTip(eleID) {
+        tooltiptimer = setTimeout("showToolTip('" + eleID + "');", 1000);
+    }
+    function showToolTip(eleID) {
+        document.getElementById(eleID).getElementsByTagName("span")[0].style.visibility = "visible";
+        tooltiptimer = "";
+    }
+    function hideToolTip(eleID) {
+        if (tooltiptimer != "") {
+            clearTimeout(tooltiptimer);
+            tooltiptimer = "";
+        }
+        document.getElementById(eleID).getElementsByTagName("span")[0].style.visibility = "hidden";
+    }
+</script>
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "mainEntity":{
+        "@type":"Corporation",
+        "name":"",
+        "tickerSymbol":"GOOG"
+    },
+    "breadcrumb":{
+    "@type": "BreadcrumbList",
+    "itemListElement":
+    [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item":
+            {
+                "@type": "WebPage",
+                "@id": "http://www.nasdaq.com/",
+                "name": "Home"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item":
+            {
+                "@type": "WebPage",
+                "@id": "http://www.nasdaq.com/quotes/",
+                "name": "Quotes"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "item":
+            {
+                "@type": "WebPage",
+                "@id": "http://www.nasdaq.com/symbol/goog",
+                "name": "Symbol"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 4,
+            "item":
+            {
+                "@type": "WebPage",
+                "@id": "http://www.nasdaq.com/quotes/historical-quotes.aspx",
+                "name": "Historical Prices"
+            }
+        }
+    ]
+}
+}
+</script>
+<!-- END page bottom script -->
+
+
+</body>	
+</html>

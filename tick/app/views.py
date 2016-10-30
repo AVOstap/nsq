@@ -134,7 +134,12 @@ def analytics(request, tick, is_json_response):
 
 
 def delta(request, tick, is_json_response):
-    model_fields = {'open': 'open_price', 'high': 'high_price', 'low': 'low_price', 'close': 'close_price'}
+    model_fields = {
+        'open': 'open_price',
+        'high': 'high_price',
+        'low': 'low_price',
+        'close': 'close_price'
+    }
 
     try:
         value = int(request.GET['value'])
@@ -163,20 +168,23 @@ def delta(request, tick, is_json_response):
 
 
 def get_price_difference(trade_list, model_field, value):
-    result = []
+    import heapq
+    heap = []
 
     for i in range(len(trade_list)):
         for j in range(i + 1, len(trade_list)):
             trades_delta = getattr(trade_list[j], model_field) - getattr(trade_list[i], model_field)
             if abs(trades_delta) >= value:
-                result.append((abs(trade_list[i].date - trade_list[j].date).total_seconds(), i, j, trades_delta))
+                heapq.heappush(heap, (abs(trade_list[i].date - trade_list[j].date).total_seconds(), i, j, trades_delta))
                 break
 
-    if result:
-        result = sorted(result)
-        min_span_time = result[0][0]
-        result = [(trade_list[start_index].date, trade_list[end_index].date, round(trades_delta, 2)) for
-                  span_time, start_index, end_index, trades_delta in result
-                  if span_time == min_span_time]
+    result = []
+    if heap:
+        min_span_time = heap[0][0]
+        while True:
+            span_time, start_index, end_index, trades_delta = heapq.heappop(heap)
+            if min_span_time != span_time:
+                break
+            result.append((trade_list[start_index].date, trade_list[end_index].date, round(trades_delta, 2)))
 
     return result

@@ -33,7 +33,7 @@ def parse(html):
         yield data_list
 
 
-def get_full_name(html):
+def get_full_name_or_none(html):
     try:
         return re.search('followObjTitle = "(.+)";', html).group(1)
     except AttributeError:
@@ -42,11 +42,11 @@ def get_full_name(html):
 
 def get_last_page_index_or_none(html):
     html_tree = BeautifulSoup(html, 'html.parser')
-    last_page_link = html_tree.find(id='quotes_content_left_lb_LastPage')
-    if not last_page_link:
+    anchor_of_last_page = html_tree.find(id='quotes_content_left_lb_LastPage')
+    if not anchor_of_last_page:
         return
-    last_page_query = urlparse(last_page_link['href']).query
-    index = parse_qs(last_page_query)['page'][0]
+    last_page_url_query = urlparse(anchor_of_last_page['href']).query
+    index = parse_qs(last_page_url_query)['page'][0]
     return int(index)
 
 

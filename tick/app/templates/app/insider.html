@@ -22,7 +22,7 @@
     {% for instrade in instrade_qs %}
     <tr>
         <td>
-            <a href='{% url 'app:insider_trade' tick=instrade.company.code name=instrade.insider.name %}'>
+            <a href='{% url 'app:insider_trade' tick=instrade.company.code insider_name=instrade.insider.name %}'>
             {{ instrade.insider.name }}
             </a>
         </td>

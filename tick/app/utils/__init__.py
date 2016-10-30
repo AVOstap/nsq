@@ -12,6 +12,11 @@ def pairwise(iterable):
 
 
 def parse_date(date_in_text):
+    """
+    '10/30/2016' -> datetime.date(2016, 10, 30)
+    :param date_in_text: str()
+    :return: datetime.date()
+    """
     try:
         return datetime.strptime(date_in_text, '%m/%d/%Y').date()
     except ValueError:

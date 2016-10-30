@@ -14,13 +14,13 @@ from app.models import Company, InsTrade, Trade
 
 
 def index(request, is_json_response):
-    companys = Company.objects.all()
+    company_qs = Company.objects.all()
 
     if is_json_response:
-        return JsonResponse({'company': [comp.code for comp in companys]})
+        return JsonResponse({'company': [company.code for company in company_qs]})
 
     context = {
-        'comp_qs': companys,
+        'comp_qs': company_qs,
     }
 
     return TemplateResponse(request, 'app/index.html', context)
@@ -31,11 +31,12 @@ def ticker(request, tick, is_json_response):
     trade_qs = Trade.objects.filter(company__code=tick, date__gte=three_month_ago)
 
     if is_json_response:
-        return JsonResponse({'trades': [{'date': trade.date,
-                                         'open': trade.open_price,
-                                         'high': trade.high_price,
-                                         'close': trade.close_price,
-                                         } for trade in trade_qs]})
+        return JsonResponse({'trades': [{
+                                            'date': trade.date,
+                                            'open': trade.open_price,
+                                            'high': trade.high_price,
+                                            'close': trade.close_price,
+                                        } for trade in trade_qs]})
 
     context = {
         'trade_qs': trade_qs,
@@ -68,23 +69,23 @@ def insider(request, tick, is_json_response):
     return TemplateResponse(request, 'app/insider.html', context)
 
 
-def insider_trade(request, tick, name, is_json_response):
-    ins_trade_qs = InsTrade.objects.filter(company__code=tick, insider__name=name)
+def insider_trade(request, tick, insider_name, is_json_response):
+    ins_trade_qs = InsTrade.objects.filter(company__code=tick, insider__name=insider_name)
 
     if is_json_response:
-        return JsonResponse({name: [{
-                                        'relation': trade.relation,
-                                        'date': trade.date,
-                                        'transaction_type': trade.transaction_type,
-                                        'owner_type': trade.owner_type,
-                                        'shares_traded': trade.shares_traded,
-                                        'last_price': trade.last_price,
-                                        'shares_head': trade.shares_head,
-                                    } for trade in ins_trade_qs]})
+        return JsonResponse({insider_name: [{
+                                                'relation': trade.relation,
+                                                'date': trade.date,
+                                                'transaction_type': trade.transaction_type,
+                                                'owner_type': trade.owner_type,
+                                                'shares_traded': trade.shares_traded,
+                                                'last_price': trade.last_price,
+                                                'shares_head': trade.shares_head,
+                                            } for trade in ins_trade_qs]})
 
     context = {
         'instrade_qs': ins_trade_qs,
-        'name': name,
+        'name': insider_name,
         'tick': tick,
     }
 

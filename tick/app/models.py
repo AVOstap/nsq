@@ -17,9 +17,16 @@ class Company(models.Model):
     def __str__(self):
         return u'{name} ({code})'.format(name=self.name, code=self.code.upper())
 
+
 class InsTrade(models.Model):
-    insider = models.ForeignKey('app.Insider', on_delete=models.CASCADE)
-    company = models.ForeignKey('app.Company', on_delete=models.CASCADE)
+    insider = models.ForeignKey(
+        'app.Insider',
+        on_delete=models.CASCADE
+    )
+    company = models.ForeignKey(
+        'app.Company',
+        on_delete=models.CASCADE
+    )
     relation = models.CharField(max_length=40)
     date = models.DateField(db_index=True)
     transaction_type = models.CharField(max_length=40, default='')
@@ -30,7 +37,11 @@ class InsTrade(models.Model):
 
 
 class Trade(models.Model):
-    company = models.ForeignKey('app.Company', on_delete=models.CASCADE, null=True)
+    company = models.ForeignKey(
+        'app.Company',
+        on_delete=models.CASCADE,
+        null=True
+    )
     date = models.DateField(null=True)
     open_price = models.FloatField(default=0.0, db_index=True)
     high_price = models.FloatField(default=0.0, db_index=True)

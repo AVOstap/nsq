@@ -1,7 +1,7 @@
 # coding: utf-8
 
 from django.conf.urls import url, include
-import views
+from app import views
 
 
 base_patterns = [

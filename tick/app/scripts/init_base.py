@@ -4,13 +4,13 @@ import locale
 import os
 import requests
 
-import read_file
-import html_parser
+
 
 import load_project
 
 from app.models import Company, Insider, InsTrade, Trade
 from app.utils import parse_date
+from app.scripts import read_file, html_parser
 
 if os.name == 'nt':
     locale.setlocale(locale.LC_ALL, 'english_USA')

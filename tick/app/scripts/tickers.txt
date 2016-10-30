@@ -1,4 +1,5 @@
 goog
+msft
 stt
 cvx
 aapl

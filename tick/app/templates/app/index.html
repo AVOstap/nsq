@@ -7,7 +7,7 @@
 {% block content %}
      <ul class="list-unstyled">
         {% for comp in comp_qs %}
-            <li>{{ comp.company_code }} <a href='{% url 'app:ticker' tick=comp.company_code %}'>link</a></li>
+            <li>{{ comp }} <a href='{% url 'app:ticker' tick=comp.code %}'>link</a></li>
         {% endfor %}
     </ul>
 {% endblock %}

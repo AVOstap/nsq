@@ -13,6 +13,8 @@
         <td>{{start_date}}</td>
         <td>{{end_date}}</td>
         <td>{{delta}}</td>
+        <td><a href='{% url 'app:analytics' tick=tick%}?date_from={{start_date|date:"m/d/Y"}}&date_to={{end_date |date:"m/d/Y"}}'>
+            link</a></td>
     </tr>
     {% endfor %}
 </table>

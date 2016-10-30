@@ -15,7 +15,7 @@ def index(request, is_json_response):
     companys = Company.objects.all()
 
     if is_json_response:
-        return JsonResponse({'company': [comp.company_code for comp in companys]})
+        return JsonResponse({'company': [comp.code for comp in companys]})
 
     context = {
         'comp_qs': companys,
@@ -26,7 +26,7 @@ def index(request, is_json_response):
 
 def ticker(request, tick, is_json_response):
     three_month_ago = (datetime.datetime.now() - datetime.timedelta(days=90)).date()
-    trade_qs = Trade.objects.filter(company__company_code=tick, date__gte=three_month_ago)
+    trade_qs = Trade.objects.filter(company__code=tick, date__gte=three_month_ago)
 
     if is_json_response:
         return JsonResponse({'trades': [{'date': trade.date,
@@ -44,7 +44,7 @@ def ticker(request, tick, is_json_response):
 
 
 def insider(request, tick, is_json_response):
-    ins_trade = InsTrade.objects.filter(company__company_code=tick)
+    ins_trade = InsTrade.objects.filter(company__code=tick)
 
     if is_json_response:
         return JsonResponse({'insider trades': [{
@@ -67,7 +67,7 @@ def insider(request, tick, is_json_response):
 
 
 def insider_trade(request, tick, name, is_json_response):
-    ins_trade_qs = InsTrade.objects.filter(company__company_code=tick, insider__name=name)
+    ins_trade_qs = InsTrade.objects.filter(company__code=tick, insider__name=name)
 
     if is_json_response:
         return JsonResponse({name: [{
@@ -96,13 +96,13 @@ def analytics(request, tick, is_json_response):
     except KeyError:
         raise Http404
 
-    qs = Trade.objects.filter(company__company_code=tick, date__range=(date_from, date_to)).order_by('-date')
+    qs = Trade.objects.filter(company__code=tick, date__range=(date_from, date_to)).order_by('-date')
     open_price_list, high_price_list, low_price_list, close_price_list, date_list = zip(
         *qs.values_list('open_price', 'high_price', 'low_price', 'close_price', 'date'))
 
     data = [open_price_list, high_price_list, low_price_list, close_price_list, ]
-    new_data = [date_list[:-1], ] + [map(lambda (x, y): round(x - y, 2), pairwise(d)) for d in data]
-    new_data = zip(*new_data)
+    new_data = [map(lambda x: round(x[0] - x[1], 2), pairwise(d)) for d in data]
+    new_data = zip(date_list[:-1], *new_data)
 
     if is_json_response:
         return JsonResponse({'analytics': [{
@@ -140,7 +140,7 @@ def delta(request, tick, is_json_response):
     except (KeyError, ValueError):
         raise Http404
 
-    trade_list = list(Trade.objects.filter(company__company_code=tick).order_by('date'))
+    trade_list = list(Trade.objects.filter(company__code=tick).order_by('date'))
 
     result = get_price_difference(trade_list, model_field, value)
 
@@ -162,8 +162,8 @@ def delta(request, tick, is_json_response):
 def get_price_difference(trade_list, model_field, value):
     result = []
 
-    for i in xrange(len(trade_list)):
-        for j in xrange(i + 1, len(trade_list)):
+    for i in range(len(trade_list)):
+        for j in range(i + 1, len(trade_list)):
             trades_delta = getattr(trade_list[j], model_field) - getattr(trade_list[i], model_field)
             if abs(trades_delta) >= value:
                 result.append((abs(trade_list[i].date - trade_list[j].date).total_seconds(), i, j, trades_delta))

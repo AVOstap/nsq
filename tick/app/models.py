@@ -11,10 +11,11 @@ class Insider(models.Model):
 
 
 class Company(models.Model):
-    company_code = models.CharField(max_length=30, db_index=True)
+    code = models.CharField(max_length=30, db_index=True)
+    name = models.CharField(max_length=50, null=True)
 
     def __unicode__(self):
-        return u'Company {code}'.format(code=self.company_code)
+        return u'{name} ({code})'.format(name=self.name, code=self.code.upper())
 
 class InsTrade(models.Model):
     insider = models.ForeignKey('app.Insider', on_delete=models.CASCADE)

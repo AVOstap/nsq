@@ -1,83 +1,49 @@
 # coding: utf-8
 
 import locale
+import os
 import requests
 
-import downlader, read_file, html_parser
+import read_file
+import html_parser
 
 import load_project
 
 from app.models import Company, Insider, InsTrade, Trade
 from app.utils import parse_date
 
-locale.setlocale(locale.LC_ALL, 'english_USA')
+if os.name == 'nt':
+    locale.setlocale(locale.LC_ALL, 'english_USA')
+else:
+    locale.setlocale(locale.LC_ALL, 'en_US.utf8')
 
 
 def main():
-    tick_iter = read_file.tick_iter()
-    Historical(tick_iter)
-    InsiderTrades(tick_iter)
+    init_b(Historical, read_file.tick_iter())
+    init_b(InsiderTrades, read_file.tick_iter())
 
 
-
-def save_insider_trades(r, tick):
-    comp, _ = Company.objects.get_or_create(company_code=tick)
-    ins, _ = Insider.objects.get_or_create(name=r[0])
-    InsTrade.objects.create(insider=ins,
-                            company=comp,
-                            relation=r[1],
-                            date=r[2],
-                            transaction_type=r[3],
-                            owner_type=r[4],
-                            shares_traded=r[5],
-                            last_price=r[6],
-                            shares_head=r[7])
-
-
-def save_historical(r, tick):
-    comp, _ = Company.objects.get_or_create(company_code=tick)
-    Trade.objects.create(
-        company=comp,
-        date=r[0],
-        open_price=r[1],
-        high_price=r[2],
-        low_price=r[3],
-        close_price=r[4],
-        volume=r[5])
-
-
-def prepare_data_historical(array):
-    if len(array) != 6:
+def init_b(miner, tick_iter):
+    if not issubclass(miner, BaseMiner):
         raise AttributeError
-
-    array[0] = parse_date(array[0])
-    array[1] = locale.atof(array[1])
-    array[2] = locale.atof(array[2])
-    array[3] = locale.atof(array[3])
-    array[4] = locale.atof(array[4])
-    array[5] = locale.atoi(array[5])
-
-
-def prepare_data_insider_trades(array):
-    if len(array) != 8:
-        raise AttributeError
-    array[2] = parse_date(array[2])
-    array[-3] = locale.atoi(array[-3])
-    array[-2] = locale.atof(array[-2])
-    array[-1] = locale.atoi(array[-1])
+    for tick in tick_iter:
+        m = miner(tick)
+        m.do_work()
 
 
 class BaseMiner(object):
     TIMEOUT = 60
+    URL = ''
 
+    def __init__(self, tick):
+        self.tick = tick
 
     @classmethod
-    def downloader(cls, tick_iter, url):
-        for tick in tick_iter:
-            request = requests.get(url=url, timeout=cls.TIMEOUT)
-            if request.status_code != 200:
-                continue
-            yield tick, request.text
+    def downloader(cls, url):
+        request = requests.get(url=url, timeout=cls.TIMEOUT)
+        if request.status_code != requests.codes.ok:
+            raise Exception
+        return request.text
 
     @classmethod
     def save(cls, array, tick):
@@ -87,15 +53,27 @@ class BaseMiner(object):
     def prepare_data(array):
         raise NotImplementedError
 
+    def do_work(self):
+        html_code = self.downloader(self.URL.format(tick=self.tick))
+        comp, is_created = Company.objects.get_or_create(code=self.tick)
+
+        if is_created or comp.name is None:
+            company_name = html_parser.get_full_name(html_code)
+            comp.name = company_name
+            comp.save()
+
+        for data_item in html_parser.parse(html_code):
+            self.prepare_data(data_item)
+            self.save(data_item, comp)
+
 
 class Historical(BaseMiner):
-    URL = 'http://www.nasdaq.com/symbol/{tick}/historical',
+    URL = 'http://www.nasdaq.com/symbol/{tick}/historical'
 
     @classmethod
-    def save(cls, array, tick):
-        comp, _ = Company.objects.get_or_create(company_code=tick)
+    def save(cls, array, company):
         Trade.objects.create(
-            company=comp,
+            company=company,
             date=array[0],
             open_price=array[1],
             high_price=array[2],
@@ -107,7 +85,6 @@ class Historical(BaseMiner):
     def prepare_data(array):
         if len(array) != 6:
             raise AttributeError
-
         array[0] = parse_date(array[0])
         array[1] = locale.atof(array[1])
         array[2] = locale.atof(array[2])
@@ -120,11 +97,10 @@ class InsiderTrades(BaseMiner):
     URL = 'http://www.nasdaq.com/symbol/{tick}/insider-trades'
 
     @classmethod
-    def save(cls, array, tick):
-        comp, _ = Company.objects.get_or_create(company_code=tick)
+    def save(cls, array, company):
         ins, _ = Insider.objects.get_or_create(name=array[0])
         InsTrade.objects.create(insider=ins,
-                                company=comp,
+                                company=company,
                                 relation=array[1],
                                 date=array[2],
                                 transaction_type=array[3],
@@ -135,15 +111,12 @@ class InsiderTrades(BaseMiner):
 
     @staticmethod
     def prepare_data(array):
-        if len(array) != 6:
+        if len(array) != 8:
             raise AttributeError
-
-        array[0] = parse_date(array[0])
-        array[1] = locale.atof(array[1])
-        array[2] = locale.atof(array[2])
-        array[3] = locale.atof(array[3])
-        array[4] = locale.atof(array[4])
-        array[5] = locale.atoi(array[5])
+        array[2] = parse_date(array[2])
+        array[-3] = locale.atoi(array[-3])
+        array[-2] = locale.atof(array[-2])
+        array[-1] = locale.atoi(array[-1])
 
 
 if __name__ == '__main__':

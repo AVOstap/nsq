@@ -122,7 +122,7 @@ def analytics(request, tick, is_json_response):
         'high_price_list': json.dumps(high_price_list),
         'low_price_list': json.dumps(low_price_list),
         'close_price_list': json.dumps(close_price_list),
-        'date_list': json.dumps(map(lambda d: d.strftime('%Y-%m-%d'), date_list)),
+        'date_list': json.dumps(tuple(map(lambda date: date.strftime('%Y-%m-%d'), date_list))),
         'range': qs.aggregate(Max('high_price'), Min('low_price')),
         'new_data': new_data,
     }

@@ -6,7 +6,7 @@ from django.db import models
 class Insider(models.Model):
     name = models.CharField(max_length=30, db_index=True)
 
-    def __unicode__(self):
+    def __str__(self):
         return u'Insider {name}'.format(name=self.name)
 
 
@@ -14,7 +14,7 @@ class Company(models.Model):
     code = models.CharField(max_length=30, db_index=True)
     name = models.CharField(max_length=50, null=True)
 
-    def __unicode__(self):
+    def __str__(self):
         return u'{name} ({code})'.format(name=self.name, code=self.code.upper())
 
 class InsTrade(models.Model):

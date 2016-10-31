@@ -8,7 +8,7 @@ def tick_iter(file_name=None):
         file_name = FILE_NAME
 
     if not os.path.isfile(file_name):
-        raise AttributeError('file not exists')
+        raise AttributeError('file {} not exists in {}'.format(FILE_NAME, os.getcwd()))
 
     with open(file_name) as f:
         while True:

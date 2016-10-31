@@ -1,22 +1,36 @@
 # coding: utf-8
 
+import sys
 from optparse import OptionParser
 from multiprocessing import Pool
 
 import load_project
 
 from app.scripts import read_file
+
 from app.scripts.minres import Historical, InsiderTrades
 
 
+MINERS = (
+    Historical,
+    InsiderTrades,
+)
+
+
 def func(miner):
-    miner.do_work()
+    try:
+        miner.do_work()
+    except Exception as e:
+        sys.stdout.write(e.message)
 
 
 def main(filename, process):
-    pool = Pool(processes=process)
-    miner_list = (Historical, InsiderTrades)
-    pool.map(func, (miner(tick) for miner in miner_list for tick in read_file.tick_iter(filename)))
+    cocked_miners = (miner(tick) for miner in MINERS for tick in read_file.tick_iter(filename))
+    if process > 1:
+        pool = Pool(processes=process)
+        pool.map(func, cocked_miners)
+    else:
+        list(map(func, cocked_miners))
 
 
 if __name__ == '__main__':

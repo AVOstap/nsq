@@ -19,6 +19,10 @@ else:
     locale.setlocale(locale.LC_ALL, 'en_US.utf8')
 
 
+class MinerError(Exception):
+    pass
+
+
 class BaseMiner(object):
     TIMEOUT = 60
     URL = ''
@@ -90,7 +94,7 @@ class Historical(BaseMiner):
     @classmethod
     def prepare_data(cls, array):
         if len(array) != cls.NUMBER_OF_COLUMNS:
-            raise AttributeError
+            raise MinerError('wrong number of columns')
         array[0] = parse_date(array[0])
         array[1] = locale.atof(array[1])
         array[2] = locale.atof(array[2])
@@ -120,7 +124,7 @@ class InsiderTrades(BaseMiner):
     @classmethod
     def prepare_data(cls, array):
         if len(array) != cls.NUMBER_OF_COLUMNS:
-            raise AttributeError
+            raise MinerError('wrong number of columns')
         array[2] = parse_date(array[2])
         array[-3] = locale.atoi(array[-3])
         array[-2] = locale.atof(array[-2])

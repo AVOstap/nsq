@@ -1,6 +1,7 @@
 # coding: utf-8
 
 import json
+import heapq
 from datetime import date
 
 from dateutil.relativedelta import relativedelta
@@ -103,18 +104,18 @@ def analytics(request, tick, is_json_response):
     open_price_list, high_price_list, low_price_list, close_price_list, date_list = zip(
         *qs.values_list('open_price', 'high_price', 'low_price', 'close_price', 'date'))
 
-    data = [open_price_list, high_price_list, low_price_list, close_price_list, ]
-    new_data = [map(lambda x: round(x[0] - x[1], 2), pairwise(d)) for d in data]
+    prises = [open_price_list, high_price_list, low_price_list, close_price_list, ]
+    new_data = [map(lambda x: round(x[0] - x[1], 2), pairwise(d)) for d in prises]
     new_data = zip(date_list[:-1], *new_data)
 
     if is_json_response:
         return JsonResponse({'analytics': [{
-                                               'date': date,
+                                               'date': trade_date,
                                                'open_delta': open_delta,
                                                'high_delta': high_delta,
                                                'low_delta': low_delta,
                                                'close_delta': close_delta
-                                           } for date, open_delta, high_delta, low_delta, close_delta in new_data]
+                                           } for trade_date, open_delta, high_delta, low_delta, close_delta in new_data]
                              })
 
     context = {
@@ -168,7 +169,6 @@ def delta(request, tick, is_json_response):
 
 
 def get_price_difference(trade_list, model_field, value):
-    import heapq
     heap = []
 
     for i in range(len(trade_list)):
